@@ -12,3 +12,6 @@ if obj_game_controller.Entry_type==string("ladder"){
 }else if obj_game_controller.Entry_type==string("stairs"){
 }else{
 }
+Flashlight = false;
+
+global.inventory = [];

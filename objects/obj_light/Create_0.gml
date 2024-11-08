@@ -10,3 +10,12 @@ Light_strength = 1
 
 tilemap=layer_tilemap_get_id("Walls")
 player_speed = 10;
+
+inventory = [];
+
+function add_to_inventory(item) {
+	array_push(inventory, item);
+	array_push(global.inventory, item);
+}
+
+near_item = false;

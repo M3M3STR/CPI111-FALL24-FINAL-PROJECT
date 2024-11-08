@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-Flashlight = true;
+room_goto(target_room);

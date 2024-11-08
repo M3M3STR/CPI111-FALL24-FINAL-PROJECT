@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ladder",
+  "%Name":"obj_keycard",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":73,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ladder",
+  "name":"obj_keycard",
   "overriddenProperties":[],
   "parent":{
     "name":"placeholders",
@@ -25,15 +25,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"target_room","filters":[],"listItems":[],"multiselect":false,"name":"target_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_ladder_placeholder",
-    "path":"sprites/spr_ladder_placeholder/spr_ladder_placeholder.yy",
+    "name":"spr_keycard",
+    "path":"sprites/spr_keycard/spr_keycard.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-Flashlight = true;
+obj_light.near_item = true;
