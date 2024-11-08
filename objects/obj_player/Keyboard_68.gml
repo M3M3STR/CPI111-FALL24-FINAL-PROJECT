@@ -4,8 +4,8 @@ if direction>180{
 		if direction=360{
 		direction=0
 	}
-direction=direction+5
+direction=direction+turn_speed
 }else if direction>0{
-	direction=direction-5
+	direction=direction-turn_speed
 	
 }

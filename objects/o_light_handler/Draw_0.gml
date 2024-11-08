@@ -54,7 +54,7 @@ for(var i=0; i<light_count_; i++)
 		surface_resize(light_surf_, rad, rad);
 		surface_set_target(light_surf_);
 			if i==0 && obj_game_controller.Flashlight{
-			draw_sprite_ext(s_light_mask_HD, 0,scale*(640), scale*(640), scale, scale, obj_light.direction, _color, _alpha);
+			draw_sprite_ext(s_light_mask_HD, 0,scale*(640), scale*(640), scale, scale, obj_player.direction, _color, _alpha);
 		}else{
 		
 			draw_sprite_ext(s_light_mask_128px_1, 0, 0, 0, scale, scale, 0, _color, _alpha);

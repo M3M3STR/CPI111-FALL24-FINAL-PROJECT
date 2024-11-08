@@ -40,7 +40,7 @@ for(var i=0; i<light_count_; i++)
 		surface_set_target(light_surf_);
 
 		if i==0{
-			draw_sprite_ext(s_light_mask_128px, 0, 0, 0, scale, scale, obj_light.direction, _color, _alpha);
+			draw_sprite_ext(s_light_mask_128px, 0, 0, 0, scale, scale, obj_player.direction, _color, _alpha);
 		}else{
 			draw_sprite_ext(s_light_mask_128px_1, 0, 0, 0, scale, scale, 0, _color, _alpha);
 		}
