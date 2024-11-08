@@ -10,10 +10,14 @@ Light_color = c_white
 Light_strength = 1
 
 tilemap=layer_tilemap_get_id("Walls")
-player_speed = 10;
+player_speed = 5;
 turn_speed = 15;
 
 health = 100; // Starting health
 oxygen = 200; // Starting oxygen
 oxygen_depletion_rate = 0.01; // Oxygen depletion per step
 health_depletion_rate = 0.05; // Health depletion per step when oxygen is zero
+
+if (!audio_is_playing(music_ambience_1)) {
+    audio_play_sound(music_ambience_1, 1, true); // Play and loop the sound
+}
