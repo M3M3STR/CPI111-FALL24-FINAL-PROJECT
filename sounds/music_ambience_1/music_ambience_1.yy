@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"music_ambience_1.ogg",
   "type":0,
-  "volume":0.7,
+  "volume":0.6,
 }
