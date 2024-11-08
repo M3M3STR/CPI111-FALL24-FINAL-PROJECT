@@ -6,8 +6,8 @@
   "name":"obj_Mdoor_forwards",
   "overriddenProperties":[],
   "parent":{
-    "name":"placeholders",
-    "path":"folders/Objects/placeholders.yy",
+    "name":"room movement",
+    "path":"folders/Objects/objects/room movement.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Mdoor_placeholder",
-    "path":"sprites/spr_Mdoor_placeholder/spr_Mdoor_placeholder.yy",
+    "name":"spr_Mdoor",
+    "path":"sprites/spr_Mdoor/spr_Mdoor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

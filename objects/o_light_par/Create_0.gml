@@ -7,3 +7,4 @@ rad_ = 128
 rad_default_ = 128;
 Light_color = c_white
 Light_strength = 1
+mask= s_light_mask_128px_1

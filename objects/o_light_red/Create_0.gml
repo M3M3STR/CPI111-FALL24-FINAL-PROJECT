@@ -7,3 +7,4 @@ rad_default_ = 128;
 Light_color = c_red
 Light_strength = 0.8
 alarm[0]=2*(game_get_speed(gamespeed_fps))
+mask= s_light_mask_128px_1
