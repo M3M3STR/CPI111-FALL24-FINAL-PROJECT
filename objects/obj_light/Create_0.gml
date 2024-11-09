@@ -3,7 +3,7 @@
 event_inherited();
 lx_ = x+(sprite_width/2);
 ly_ = y+(sprite_height/2);
-rad_ = 1280;//edit for light bounding box, how far away light can be drawn (LAG!!!!)
+rad_ = 100;//edit for light bounding box, how far away light can be drawn (LAG!!!!)
 rad_default_ = 1280;//edit for light bounding box (LAG!!!!)
 Light_color = c_white
 Light_strength = 1
