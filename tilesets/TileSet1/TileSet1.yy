@@ -30,8 +30,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_placeholdertileset",
-    "path":"sprites/spr_placeholdertileset/spr_placeholdertileset.yy",
+    "name":"spr_metal_wall_tileset",
+    "path":"sprites/spr_metal_wall_tileset/spr_metal_wall_tileset.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

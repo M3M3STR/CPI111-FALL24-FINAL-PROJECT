@@ -5,4 +5,5 @@ ly_ = y+(sprite_height/2);
 rad_ = 128
 rad_default_ = 128;
 Light_color = #33ddff
-Light_strength = 0.95
+Light_strength = 1
+mask= s_light_mask_128px_1

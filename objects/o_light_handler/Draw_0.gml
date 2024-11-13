@@ -34,6 +34,7 @@ var first_light = true;
 for(var i=0; i<light_count_; i++)
 {	
 	var light = instance_find(o_light_par, i);
+	var _mask = light.mask
 			
 	if (!light.static_)
 	{
@@ -47,17 +48,20 @@ for(var i=0; i<light_count_; i++)
 		//draw shadows
 		surface_set_target(shadow_surf_);
 			draw_clear_alpha(0,0);
+			if _mask==s_light_mask_window{
+			project_shadow(lx, ly, rad, tilemap_window_);
+			}else{
 			project_shadow(lx, ly, rad, tilemap_);
+			}
 		surface_reset_target();
-	
+
 		//draw the light
 		surface_resize(light_surf_, rad, rad);
 		surface_set_target(light_surf_);
 			if i==0 && obj_game_controller.Flashlight{
-			draw_sprite_ext(s_light_mask_HD, 0,scale*(640), scale*(640), scale, scale, obj_light.direction, _color, _alpha);
-		}else{
-		
-			draw_sprite_ext(s_light_mask_128px_1, 0, 0, 0, scale, scale, 0, _color, _alpha);
+			draw_sprite_ext(_mask, 0,scale*(640), scale*(640), scale, scale, obj_player.direction, _color, _alpha);
+					}else{
+			draw_sprite_ext(_mask, 0, 0, 0, scale, scale, 0, _color, _alpha);
 		}
 			draw_surface_part(shadow_surf_, lx-(rad/2), ly-(rad/2), rad, rad, 0, 0);
 		surface_reset_target();
@@ -95,4 +99,4 @@ shader_set(sh_ambient_light);
 	shader_set_uniform_f(u_ambient_light_, ambient_light_);
 	draw_surface(light_surf_, cx, cy);
 shader_reset();
-gpu_set_blendmode(bm_normal);
+
