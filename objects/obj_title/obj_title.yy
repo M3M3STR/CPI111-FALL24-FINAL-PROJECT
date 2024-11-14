@@ -6,8 +6,8 @@
   "name":"obj_title",
   "overriddenProperties":[],
   "parent":{
-    "name":"placeholders",
-    "path":"folders/Objects/placeholders.yy",
+    "name":"objects",
+    "path":"folders/Objects/objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

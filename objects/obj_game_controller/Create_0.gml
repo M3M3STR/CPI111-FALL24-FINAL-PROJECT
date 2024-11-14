@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 if obj_game_controller.Entry_type==string("ladder"){
 		obj_player.x=obj_ladder.x
 		obj_player.y=obj_ladder.y

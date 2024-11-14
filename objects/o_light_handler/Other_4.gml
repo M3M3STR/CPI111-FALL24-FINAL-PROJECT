@@ -12,8 +12,8 @@ static_lightmap_surf_	= -1;
 u_ambient_light_		= shader_get_uniform(sh_ambient_light, "u_fAmbientLight");
 
 //Add tilemap here to cast shadows
-tilemap_[0] = layer_tilemap_get_id("light_blockers");
-if (layer_exists("a")) { tilemap_[1] = layer_tilemap_get_id("a"); }
+if (layer_exists("Light_blockers")){tilemap_[0] = layer_tilemap_get_id("Light_blockers")};
+if (layer_exists("window_light_blockers")) { tilemap_window_[0] = layer_tilemap_get_id("window_light_blockers") };
 	
 if (foreground_depth_ != -1)
 {

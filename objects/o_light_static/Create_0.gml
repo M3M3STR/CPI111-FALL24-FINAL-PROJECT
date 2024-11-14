@@ -3,5 +3,6 @@
 
 // Inherit the parent event
 event_inherited();
-Light_strength=1
+light_strength=1
+mask= s_light_mask_128px_1
 
