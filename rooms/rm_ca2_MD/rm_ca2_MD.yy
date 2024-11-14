@@ -12,11 +12,17 @@
     {"name":"inst_7FC5C7C5_2","path":"rooms/rm_ca2_MD/rm_ca2_MD.yy",},
     {"name":"inst_52FF1112_2","path":"rooms/rm_ca2_MD/rm_ca2_MD.yy",},
     {"name":"inst_D7A094D_2","path":"rooms/rm_ca2_MD/rm_ca2_MD.yy",},
+    {"name":"inst_53DCFC7F","path":"rooms/rm_ca2_MD/rm_ca2_MD.yy",},
+    {"name":"inst_23B61C1F","path":"rooms/rm_ca2_MD/rm_ca2_MD.yy",},
+    {"name":"inst_786B89AE","path":"rooms/rm_ca2_MD/rm_ca2_MD.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"idk_important","depth":0,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_5AB27BD9_1_1_1_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5AB27BD9_1_1_1_2","objectId":{"name":"o_controller","path":"objects/o_controller/o_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":32.0,},
+        {"$GMRInstance":"v1","%Name":"inst_53DCFC7F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_53DCFC7F","objectId":{"name":"obj_goldkey","path":"objects/obj_goldkey/obj_goldkey.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":832.0,},
+        {"$GMRInstance":"v1","%Name":"inst_23B61C1F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_23B61C1F","objectId":{"name":"obj_keycard","path":"objects/obj_keycard/obj_keycard.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-96.0,"y":896.0,},
+        {"$GMRInstance":"v1","%Name":"inst_786B89AE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_786B89AE","objectId":{"name":"obj_flashlight","path":"objects/obj_flashlight/obj_flashlight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-96.0,"y":768.0,},
       ],"layers":[],"name":"idk_important","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"light_blockers","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"light_blockers","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":38,"SerialiseWidth":60,"TileCompressedData":[
           -59,1,5,-2147483648,1,-2147483648,-2147483648,0,-21,-2147483648,1,0,-5,-2147483648,-6,0,-21,-2147483648,

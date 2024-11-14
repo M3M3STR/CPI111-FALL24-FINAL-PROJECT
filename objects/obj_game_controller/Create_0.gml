@@ -15,3 +15,6 @@ if obj_game_controller.Entry_type==string("ladder"){
 Flashlight = false;
 
 global.inventory = [];
+global.inventory2 = [];
+global.collected_items = [];
+

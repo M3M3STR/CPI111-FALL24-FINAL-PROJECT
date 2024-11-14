@@ -12,6 +12,7 @@ tilemap=layer_tilemap_get_id("Walls")
 player_speed = 10;
 
 inventory = [];
+inventory2 = [];
 
 function add_to_inventory(item) {
 	array_push(inventory, item);

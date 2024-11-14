@@ -1,3 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto(target_room);
+if (array_contain(global.collected_items, item_id)) {
+	instance_destroy();
+}
