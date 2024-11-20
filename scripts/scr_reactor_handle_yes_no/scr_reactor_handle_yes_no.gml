@@ -15,7 +15,7 @@ function scr_reactor_handle_yes_no(_command, _component) {
                 scr_set_output(_action + " Heat Exchangers...");
                 break;
         }
-        with (obj_reactor) {
+		with (obj_reactor) {
             alarm_set(0, scr_fps() * 3.9);
         }
         alarm_set(2, 4 * scr_fps());

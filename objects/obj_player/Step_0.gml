@@ -7,7 +7,7 @@ ly_ = y;
 var _xinput = 0;
 var _yinput = 0;
 
-if (!obj_computer_interface.is_computer_on) {
+if (!obj_computer.is_computer_on) {
     if (!obj_player.is_player_paused) {
         _xinput = keyboard_check(ord("D")) - keyboard_check(ord("A"));
         _yinput = keyboard_check(ord("S")) - keyboard_check(ord("W"));

@@ -35,8 +35,8 @@ function scr_init_display(_display_type, _sentence) {
     obj_crt.image_yscale = _yscle;
     obj_crt_black.image_xscale = _xscle / 10;
     obj_crt_black.image_yscale = _yscle / 10;
-    obj_computer_interface.image_xscale = _xscle / 10;
-    obj_computer_interface.image_yscale = _yscle / 10;
+    obj_computer.image_xscale = _xscle / 10;
+    obj_computer.image_yscale = _yscle / 10;
 
     x = cx + _xscle * 12.8;
     y = cy + _yscle * 9.6;

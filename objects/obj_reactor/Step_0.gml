@@ -9,7 +9,7 @@ if (is_reactor_working) {
 
     // Coolant pumps reduce temperature at a static rate
     if (are_pumps_cooling) {
-        temperature -= 1 * rate; // Reduce temperature by 1 unit per step, scaled by rate
+        temperature -= coolant_reduction * rate; // Reduce temp
         // Clamp temperature to a minimum of -100
         if (temperature < -100) {
             temperature = -100;
@@ -18,7 +18,7 @@ if (is_reactor_working) {
 
     // Update power output if the reactor is heat exchanging and above 600 degrees
     if (is_heat_exchanging && temperature >= 600) {
-        power_output = string(temperature / 60);
+        power_output = string(temperature / heat_generation);
     }
 } else {
     // Reactor is not working
@@ -50,6 +50,10 @@ if (_delta_temperature > _max_delta_temperature) {
 }
 
 temperature += _delta_temperature;
+
+if (temperature < -100) {
+    temperature = -100;
+}
 
 // Optional: Output debug message to monitor temperature
 // show_debug_message("Temperature: " + string(temperature));
