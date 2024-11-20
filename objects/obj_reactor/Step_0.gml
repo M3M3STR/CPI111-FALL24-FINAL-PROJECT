@@ -1,24 +1,55 @@
-/// @description Insert description here
-// You can write your code in this editor
-if reactor_working{
-	
-	power_production="0"
-	controll_rods=string(controlrod)+"%"
-if coolant_pumps{
-	
-	temprature--
-	if temprature<-100{
-		temprature=-100
-	}
+/// Reactor temperature and power output update logic
 
+if (is_reactor_working) {
+    // Update power production to "0" initially
+    power_output = "0";
+
+    // Update control rods display status
+    control_rod_status = string(control_rod_level) + "%";
+
+    // Coolant pumps reduce temperature at a static rate
+    if (are_pumps_cooling) {
+        temperature -= 1 * rate; // Reduce temperature by 1 unit per step, scaled by rate
+        // Clamp temperature to a minimum of -100
+        if (temperature < -100) {
+            temperature = -100;
+        }
+    }
+
+    // Update power output if the reactor is heat exchanging and above 600 degrees
+    if (is_heat_exchanging && temperature >= 600) {
+        power_output = string(temperature / 60);
+    }
+} else {
+    // Reactor is not working
+    control_rod_status = "Error";
+    power_output = "Null";
 }
 
+// Define maximum temperature change per step
+var _max_delta_temperature = 10 * rate; // Adjust this value as needed
 
-if temprature<-100{
-		temprature=-100
-	}
-}else{
-	controll_rods="Error"
-	power_production="Null"
+// Update temperature based on control rod level and rate
+var _adjusted_temperature = 1601 - control_rod_level * 16;
+
+var _denominator = 101 + temperature;
+if (_denominator < 1) {
+    _denominator = 1; // Prevent denominator from being less than 1
 }
-temprature=temprature+((1601-(controlrod*16))/(101+temprature)-(controlrod/100))
+
+var _first_term = _adjusted_temperature / _denominator;
+var _second_term = control_rod_level / 100;
+
+var _delta_temperature = (_first_term - _second_term) * rate;
+
+// Limit the maximum delta temperature
+if (_delta_temperature > _max_delta_temperature) {
+    _delta_temperature = _max_delta_temperature;
+} else if (_delta_temperature < -_max_delta_temperature) {
+    _delta_temperature = -_max_delta_temperature;
+}
+
+temperature += _delta_temperature;
+
+// Optional: Output debug message to monitor temperature
+// show_debug_message("Temperature: " + string(temperature));

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_parse_input",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_parse_input",
+  "parent":{
+    "name":"Computer",
+    "path":"folders/Scripts/Computer.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

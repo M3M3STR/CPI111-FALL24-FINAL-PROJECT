@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_reactor_deactivate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_reactor_deactivate",
+  "parent":{
+    "name":"Reactor",
+    "path":"folders/Scripts/Computer/Reactor.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

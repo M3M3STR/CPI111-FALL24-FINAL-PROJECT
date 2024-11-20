@@ -6,8 +6,8 @@
   "name":"obj_ladder",
   "overriddenProperties":[],
   "parent":{
-    "name":"room movement",
-    "path":"folders/Objects/objects/room movement.yy",
+    "name":"Navigation",
+    "path":"folders/Objects/Navigation.yy",
   },
   "parentObjectId":null,
   "persistent":false,

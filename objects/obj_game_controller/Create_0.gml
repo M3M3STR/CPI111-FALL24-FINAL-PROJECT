@@ -1,15 +1,10 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-if obj_game_controller.Entry_type==string("ladder"){
-		obj_player.x=obj_ladder.x
-		obj_player.y=obj_ladder.y
-}else if obj_game_controller.Entry_type==string("doorF"){
-	obj_player.x=obj_Mdoor_forwards.x+32
-		obj_player.y=obj_Mdoor_forwards.y
-}else if obj_game_controller.Entry_type==string("doorA"){
-	obj_player.x=obj_Mdoor_forwards.x-32
-		obj_player.y=obj_Mdoor_forwards.y
-}else if obj_game_controller.Entry_type==string("stairs"){
-}else{
-}
+interaction_type = -1;
+last_room = room;
+player_x = 0;
+player_y = 0;
+player_direction = 0;
+is_flashlight_on = true;
+is_shader_enabled = true;
+stair_x_offset = 0;
+stair_y_offset = 0;
+is_muted = true;

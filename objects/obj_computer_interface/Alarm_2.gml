@@ -1,45 +1,32 @@
-/// @boot sequence
+/// @description Boot sequence or delayed actions
 
-// You can write your code in this editor
-if instance_exists(obj_terminal) &&!obj_terminal.reactor_term_unlock{
-	o_sentance_current_length=0
-		obj_terminal.reactor_term_unlock=true
-			o_draw_string=blank
-	o_sentance_length=0
-		alarm_set(1,1)
-		alarm_set(0,1)
+function reactor_status() {
+	return scr_conditional(obj_reactor.is_reactor_working, "Activated", "Deactivated");
 }
-if instance_exists(obj_terminal) && obj_terminal.reactor_term_unlock{
-	o_sentance_current_length=0
-		o_draw_string=blank
-	o_sentance_length=0
-		alarm_set(1,1)
-		alarm_set(0,1)
 
-
-
-
-sentance=string("Reactor Status:")
-sentance_length=string_length(sentance)
-if instance_exists(obj_reactor){
-if obj_reactor.coolant_pumps{
-	var coolant="Online"
-}else{
-	var coolant="Offline"
-	}
-	if obj_reactor.heat_exchangers{
-	var heat="Online"
-}else{
-	var heat="Offline"
-	}
-
-
-output=(string(obj_reactor.power_production)+"/kWh \nTemprature:"+ string(obj_reactor.temprature)+".C \nCoolant Pumps: " +string(coolant)+ "\nControl Rods: "+ string(obj_reactor.controll_rods)+  "\nHeat Exchangers: "+string(heat))
-o_sentance_length=string_length(output)
-
-}else{
-	output="Fatal Error"
-
-	o_sentance_length=string_length(output)
+if (instance_exists(obj_terminal) && !obj_terminal.is_reactor_unlocked) {
+    scr_reset_display();
+    obj_terminal.is_reactor_unlocked = true;
+	
+    scr_set_sentence("Reactor Status: " + reactor_status());
 }
+
+if (instance_exists(obj_terminal) && obj_terminal.is_reactor_unlocked) {
+    scr_reset_display();
+    scr_set_sentence("Reactor Status: " + reactor_status());
+    if (instance_exists(obj_reactor)) {
+        var _coolant = scr_conditional(obj_reactor.are_pumps_cooling, "Online", "Offline");
+        var _heat = scr_conditional(obj_reactor.is_heat_exchanging, "Online", "Offline");
+        output =
+            "Coolant Pumps: " +
+            _coolant +
+            "\nControl Rods: " +
+            string(obj_reactor.control_rod_status) +
+            "\nHeat Exchangers: " +
+            _heat;
+        o_sentence_length = string_length(output);
+        alarm_set(0, 1);
+    } else {
+        scr_set_output("Fatal Error: Reactor not found");
+    }
 }

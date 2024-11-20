@@ -1,8 +1,10 @@
-/// @description Insert description here
-// You can write your code in this editor
-if draw_display && o_sentance_length>o_sentance_current_length{
+/// @description Typing effect for output text
 
-	alarm_set(0,0.02*game_get_speed(gamespeed_fps))
-	o_sentance_current_length++
-	o_draw_string=(string(o_draw_string)+string_char_at(output,o_sentance_current_length))
+if (is_computer_on && o_sentence_length > o_sentence_current_length) {
+    is_processing = true;
+    alarm_set(0, 0.02 * scr_fps());
+    o_sentence_current_length++;
+    o_draw_string += string_char_at(output, o_sentence_current_length);
+} else {
+    is_processing = false;
 }

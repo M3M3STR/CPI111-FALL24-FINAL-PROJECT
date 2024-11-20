@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DIRECTION",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DIRECTION",
+  "parent":{
+    "name":"Enums",
+    "path":"folders/Scripts/Enums.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

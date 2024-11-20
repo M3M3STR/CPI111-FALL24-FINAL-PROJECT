@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_reactor_handle_locked_terminal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_reactor_handle_locked_terminal",
+  "parent":{
+    "name":"Computer",
+    "path":"folders/Scripts/Computer.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

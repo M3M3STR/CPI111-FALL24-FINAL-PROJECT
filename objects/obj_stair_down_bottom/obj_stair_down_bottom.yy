@@ -6,8 +6,8 @@
   "name":"obj_stair_down_bottom",
   "overriddenProperties":[],
   "parent":{
-    "name":"stairs",
-    "path":"folders/Objects/objects/room movement/stairs.yy",
+    "name":"Stairs",
+    "path":"folders/Objects/Navigation/Stairs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

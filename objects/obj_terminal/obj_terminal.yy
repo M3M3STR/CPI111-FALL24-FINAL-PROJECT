@@ -3,14 +3,14 @@
   "%Name":"obj_terminal",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":13,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_terminal",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/Objects/objects.yy",
+    "name":"Elements",
+    "path":"folders/Objects/Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -26,13 +26,10 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"reactor_term_unlock","filters":[],"listItems":[],"multiselect":false,"name":"reactor_term_unlock","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
-    {"$GMObjectProperty":"v1","%Name":"lockout","filters":[],"listItems":[],"multiselect":false,"name":"lockout","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_computer",
     "path":"sprites/spr_computer/spr_computer.yy",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"light masks",
-    "path":"folders/Sprites/light masks.yy",
+    "name":"Light Masks",
+    "path":"folders/Sprites/Light Masks.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
