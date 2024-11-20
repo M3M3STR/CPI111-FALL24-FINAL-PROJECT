@@ -1,5 +1,8 @@
 if (room != rm_ui_main_menu) {
     if (is_computer_on) {
+		show_debug_message(string(DISPLAY.DEFAULT) + " | " + string(DISPLAY.REACTOR));
+		show_debug_message(string(display_type));
+		
         // Set font and color for display
         draw_set_font(fnt_computer_smooth);
         draw_set_color(c_lime);
@@ -8,7 +11,8 @@ if (room != rm_ui_main_menu) {
         // Draw content based on display type
         switch (display_type) {
             case DISPLAY.TESTING:
-                scr_draw_centered("TEST COMPUTER", draw_string, player_input, "");
+			case DISPLAY.DEFAULT:
+                scr_draw_centered("Krasnoye Echo", draw_string, player_input, "");
                 break;
 
             case DISPLAY.PAUSE:

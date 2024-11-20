@@ -8,6 +8,8 @@ if (keyboard_check_pressed(vk_enter) && !is_player_paused) {
     is_player_paused = true;
     obj_game_controller.alarm[0] = 3 * scr_fps();
     
-    // Handle room transitions based on the current room
-    room_goto(scr_use_ladder(room))
+	visible = false;
+	obj_game_controller.is_flashlight_on = false;
+	
+    alarm_set(0, scr_fps() * 1.15)
 }

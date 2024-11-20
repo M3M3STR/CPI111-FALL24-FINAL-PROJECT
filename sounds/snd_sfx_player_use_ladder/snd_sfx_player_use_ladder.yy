@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.211188,
+  "duration":1.149375,
   "name":"snd_sfx_player_use_ladder",
   "parent":{
     "name":"player",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_sfx_player_use_ladder.wav",
+  "soundFile":"snd_sfx_player_use_ladder.mp3",
   "type":0,
-  "volume":0.61,
+  "volume":0.5,
 }
