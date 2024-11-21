@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Movment",
-    "path":"folders/Sprites/Main Assets/Movment.yy",
+    "name":"CPI111 FALL24 FINAL PROJECT",
+    "path":"CPI111 FALL24 FINAL PROJECT.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"furnature",
-    "path":"folders/Sprites/Main Assets/furnature.yy",
+    "name":"CPI111 FALL24 FINAL PROJECT",
+    "path":"CPI111 FALL24 FINAL PROJECT.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
