@@ -1,0 +1,1 @@
+audio_play_sound(snd_mus_calm_theme_loop,10,1)

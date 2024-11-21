@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"CPI111 FALL24 FINAL PROJECT",
-    "path":"CPI111 FALL24 FINAL PROJECT.yyp",
+    "name":"Main Assets",
+    "path":"folders/Sprites/Main Assets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

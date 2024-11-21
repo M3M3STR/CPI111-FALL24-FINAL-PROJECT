@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":181.89474,
+  "duration":192.0,
   "name":"snd_mus_calm_theme_loop",
   "parent":{
     "name":"Music",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_mus_calm_theme_loop.wav",
   "type":1,
-  "volume":1.0,
+  "volume":0.22,
 }

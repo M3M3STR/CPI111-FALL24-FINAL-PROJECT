@@ -19,7 +19,10 @@ if (is_reactor_working) {
     // Update power output if the reactor is heat exchanging and above 600 degrees
     if (is_heat_exchanging && temperature >= 600) {
         power_output = string(temperature / heat_generation);
-    }
+		obj_game_controller.is_ship_powered=true;
+    }else{
+		obj_game_controller.is_ship_powered=false;
+	}
 } else {
     // Reactor is not working
     control_rod_status = "Error";

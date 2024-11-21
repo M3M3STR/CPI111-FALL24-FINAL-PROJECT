@@ -9,7 +9,8 @@ if (room != rm_ui_main_menu && room != rm_ui_pause_menu) {
 }
 
 if (room == rm_ui_main_menu) {
-    // Nothing
+	
+	audio_pause_sound(snd_mus_calm_theme_loop)
 } else if (room == rm_ui_pause_menu) {
     // Nothing
 }
