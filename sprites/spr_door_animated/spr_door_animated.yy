@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Movement",
-    "path":"folders/Sprites/Main Assets/Movement.yy",
+    "name":"Movment",
+    "path":"folders/Sprites/Main Assets/Movment.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
