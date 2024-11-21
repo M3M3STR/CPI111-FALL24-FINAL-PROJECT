@@ -13,6 +13,7 @@ o_sentence_length = 0;
 o_sentence_current_length = 0;
 draw_string = "";
 o_draw_string = "";
+is_loading_text = false;
 
 // Input-related state
 player_input = "";

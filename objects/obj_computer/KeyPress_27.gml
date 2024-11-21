@@ -8,4 +8,5 @@ if (room != rm_ui_main_menu && room != rm_ui_pause_menu) {
         scr_close_display();
         obj_light_handler.call_rerender = true;
     }
+		is_loading_text = true;
 }

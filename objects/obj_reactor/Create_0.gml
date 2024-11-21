@@ -6,7 +6,6 @@ rate = 15;
 are_pumps_cooling = false;
 randomize();
 coolant_reduction = random_range(0.3, 1);
-show_debug_message("Coolant Reduction: " + string(coolant_reduction));
 
 is_heat_exchanging = false;
 heat_generation = 0.1;

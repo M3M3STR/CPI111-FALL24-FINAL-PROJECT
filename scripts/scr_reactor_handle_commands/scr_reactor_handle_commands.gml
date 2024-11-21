@@ -27,7 +27,7 @@ function scr_reactor_handle_commands(_command, _input) {
 					if obj_reactor.is_reactor_working {
                         scr_reactor_control_rods_prompt();
                     } else {
-                        scr_set_output("Error: Reactor is not active.");
+                        scr_set_output("Error: .");
                     }
                     break;
                 case RCOMMAND.BACK:

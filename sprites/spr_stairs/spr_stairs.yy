@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Stairs",
-    "path":"folders/Sprites/Main Assets/Stairs.yy",
+    "path":"folders/Sprites/Main Assets/Movement/Stairs.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

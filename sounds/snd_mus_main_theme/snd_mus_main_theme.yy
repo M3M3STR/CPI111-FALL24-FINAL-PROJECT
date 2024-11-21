@@ -12,8 +12,8 @@
   "duration":196.10529,
   "name":"snd_mus_main_theme",
   "parent":{
-    "name":"music",
-    "path":"folders/Sounds/music.yy",
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

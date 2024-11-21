@@ -54,6 +54,3 @@ temperature += _delta_temperature;
 if (temperature < -100) {
     temperature = -100;
 }
-
-// Optional: Output debug message to monitor temperature
-// show_debug_message("Temperature: " + string(temperature));

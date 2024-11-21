@@ -7,7 +7,7 @@ function scr_reactor_control_rods_prompt() {
 			"% inserted." + 
 			"\nPlease enter a number between 0 and 100 to adjust:");
     } else {
-        scr_set_output("Error: Reactor is not active.");
+        scr_set_output("Error: .");
         reactor_screen = 0;
     }
 }

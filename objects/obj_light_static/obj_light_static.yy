@@ -3,11 +3,13 @@
   "%Name":"obj_light_static",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_light_static",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_light_parent","path":"objects/obj_light_parent/obj_light_parent.yy",},"propertyId":{"name":"scale_","path":"objects/obj_light_parent/obj_light_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_light_parent","path":"objects/obj_light_parent/obj_light_parent.yy",},"propertyId":{"name":"scale_","path":"objects/obj_light_parent/obj_light_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"7",},
   ],
   "parent":{
     "name":"Lighting",

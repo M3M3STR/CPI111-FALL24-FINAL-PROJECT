@@ -17,7 +17,7 @@ light_color = c_white;
 light_strength = 1;
 
 tilemap = layer_tilemap_get_id("Walls");
-default_speed = 5;
+default_speed = 10;
 player_speed = default_speed;
 turn_speed = 15;
 

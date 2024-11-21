@@ -103,4 +103,5 @@ if (is_computer_on && !is_processing) {
             scr_reactor_handle_commands(_command, _input);
         }
     }
+	is_loading_text = true;
 }

@@ -12,8 +12,8 @@
   "duration":1.60475,
   "name":"snd_sfx_player_use_door",
   "parent":{
-    "name":"player",
-    "path":"folders/Sounds/sfx/player.yy",
+    "name":"Player",
+    "path":"folders/Sounds/SFX/Player.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

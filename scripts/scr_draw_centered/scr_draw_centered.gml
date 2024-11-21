@@ -6,7 +6,7 @@ function scr_draw_centered(_title, _text1, _text2, _player_input, _extra_text = 
     draw_text_ext(text_x, text_y + 64, _text1, scale * 2, text_x_end);
 
     if (_extra_text != "") {
-        draw_text_ext(text_x, text_y + 32, _extra_text, scale * 2, text_x_end);
+        draw_text_ext(text_x, text_y + 48, _extra_text, scale * 2, text_x_end);
     }
 
     draw_text_ext(text_x, text_y + 128, _text2, scale * 2, text_x_end);

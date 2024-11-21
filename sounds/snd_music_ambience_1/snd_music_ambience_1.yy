@@ -12,8 +12,8 @@
   "duration":103.5,
   "name":"snd_music_ambience_1",
   "parent":{
-    "name":"music",
-    "path":"folders/Sounds/music.yy",
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

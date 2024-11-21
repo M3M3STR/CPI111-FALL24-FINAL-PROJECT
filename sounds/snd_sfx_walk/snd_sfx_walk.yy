@@ -12,8 +12,8 @@
   "duration":59.951,
   "name":"snd_sfx_walk",
   "parent":{
-    "name":"player",
-    "path":"folders/Sounds/sfx/player.yy",
+    "name":"Player",
+    "path":"folders/Sounds/SFX/Player.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
