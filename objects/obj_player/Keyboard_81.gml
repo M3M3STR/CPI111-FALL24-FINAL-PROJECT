@@ -1,8 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
-if !obj_computer_interface.draw_display{
-direction=direction+5
-if direction>360{
-	direction=direction-360
-}
+if (!obj_computer.is_computer_on) {
+    direction += turn_speed;
+    if (direction > 360) {
+        direction -= 360; // Wrap around to keep direction within 0-359
+    }
 }

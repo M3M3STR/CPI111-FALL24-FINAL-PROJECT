@@ -1,3 +1,1 @@
-/// @description Insert description here
-// You can write your code in this editor
-obj_player.player_pause=false
+obj_player.is_player_paused = false;

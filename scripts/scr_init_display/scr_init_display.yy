@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_init_display",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_init_display",
+  "parent":{
+    "name":"Computer",
+    "path":"folders/Scripts/Computer.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

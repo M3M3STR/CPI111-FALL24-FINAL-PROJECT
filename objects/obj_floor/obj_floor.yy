@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_floor",
-    "path":"sprites/spr_floor/spr_floor.yy",
+    "name":"spr_floor_a",
+    "path":"sprites/spr_floor_a/spr_floor_a.yy",
   },
   "spriteMaskId":null,
   "visible":true,

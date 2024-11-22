@@ -1,42 +1,39 @@
-/// @description Insert description here
-// You can write your code in this editor
-if obj_player.happy==true{
-obj_player.player_speed=obj_player._speed/2
-	obj_player.happy=false
+// Set is_on_stair and adjust player speed
+if (!is_on_stair) {
+    player_speed /= 2;
+    is_on_stair = true;
 }
 
-if _direction==180{
-	obj_game_controller.stairvarx=(obj_player.x-obj_stair_down.x)
-	if obj_game_controller.stairvarx>(obj_stair_down.sprite_width/8){
-		go_down =true
-	}
-}else if _direction==0{
-	obj_game_controller.stairvarx=(obj_player.x-obj_stair_down.x)
-	if obj_game_controller.stairvarx<(obj_stair_down.sprite_width/8){
-		go_down =true
-	}
-} else if _direction==90{
-	obj_game_controller.stairvar=(obj_player.y-obj_stair_down.y)
-	if obj_game_controller.stairvar<(obj_stair_down.sprite_width/8){
-		go_down =true
-	}
-}else if _direction==270{
-	obj_game_controller.stairvar=(obj_player.y-obj_stair_down.y)
-	if obj_game_controller.stairvar>(obj_stair_down.sprite_width/8){
-		go_down =true
-	}
-}
-if go_down==true{
-obj_game_controller.stairvar=(obj_player.y-obj_stair_down.y)
-obj_game_controller.stairvarx=(obj_player.x-obj_stair_down.x)
+// Determine stair movement based on direction
+switch (_direction_down) {
+    case 180:
+    case 0:
+        obj_game_controller.stair_x_offset = x - obj_stair_down.x;
+        go_down = scr_check_stair_condition(
+            obj_game_controller.stair_x_offset, 
+            obj_stair_down.sprite_width / 8, 
+            _direction_down == 180
+        );
+        break;
 
-	obj_game_controller.player_direction=obj_player.direction
-	obj_game_controller.Entry_type=string("stairsD")
-	 if room==(rm_front_MD){
-		room_goto(rm_front_F2)
-	}else if room=(rm_front_F2){
-		room_goto(rm_front_F3)
-	}else if room=(rm_front_upper1){
-		room_goto(rm_front_MD)
-	}
+    case 90:
+    case 270:
+        obj_game_controller.stair_y_offset = y - obj_stair_down.y;
+        go_down = scr_check_stair_condition(
+            obj_game_controller.stair_y_offset, 
+            obj_stair_down.sprite_width / 8, 
+            _direction_down == 270
+        );
+        break;
+}
+
+// Handle room transition if moving down the stairs
+if (go_down) {
+    obj_game_controller.stair_y_offset = y - obj_stair_down.y;
+    obj_game_controller.stair_x_offset = x - obj_stair_down.x;
+
+    obj_game_controller.player_direction = direction;
+    obj_game_controller.interaction_type = INTERACTION.STAIRSDOWN;
+
+    room_goto(scr_use_stair(room, STAIRDIRECTION.DOWN));
 }

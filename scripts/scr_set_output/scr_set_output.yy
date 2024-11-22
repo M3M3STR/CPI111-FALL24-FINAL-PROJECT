@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_set_output",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_set_output",
+  "parent":{
+    "name":"Computer",
+    "path":"folders/Scripts/Computer.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

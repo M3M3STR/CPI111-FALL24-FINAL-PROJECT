@@ -1,9 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-if !obj_player.player_pause && !obj_computer_interface.draw_display{
-if Flashlight{
-	Flashlight=false
-}else{
-	Flashlight=true
-}
+if (!obj_player.is_player_paused && !obj_computer.is_computer_on) {
+	is_flashlight_on = scr_conditional(is_flashlight_on, false, true)
 }

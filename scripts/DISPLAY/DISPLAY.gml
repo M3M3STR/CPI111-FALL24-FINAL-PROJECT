@@ -1,0 +1,6 @@
+enum DISPLAY {
+	PAUSE,
+	REACTOR,
+	TESTING,
+	DEFAULT
+}

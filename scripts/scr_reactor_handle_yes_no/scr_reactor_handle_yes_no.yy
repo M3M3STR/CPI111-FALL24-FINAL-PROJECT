@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_reactor_handle_yes_no",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_reactor_handle_yes_no",
+  "parent":{
+    "name":"Reactor",
+    "path":"folders/Scripts/Computer/Reactor.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

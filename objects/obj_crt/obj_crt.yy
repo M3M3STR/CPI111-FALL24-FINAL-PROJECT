@@ -6,8 +6,8 @@
   "name":"obj_crt",
   "overriddenProperties":[],
   "parent":{
-    "name":"game function",
-    "path":"folders/Objects/game function.yy",
+    "name":"Others",
+    "path":"folders/Objects/Others.yy",
   },
   "parentObjectId":null,
   "persistent":true,

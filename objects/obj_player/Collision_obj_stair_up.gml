@@ -1,42 +1,39 @@
-/// @description Insert description here
-// You can write your code in this editor
-if obj_player.happy==true{
-obj_player.player_speed=obj_player._speed/2
-	obj_player.happy=false
+// Set is_on_stair and adjust player speed
+if (!is_on_stair) {
+    player_speed /= 2;
+    is_on_stair = true;
 }
 
-if _directionu==180{
-obj_game_controller.stairvarx=(obj_player.x-obj_stair_up.x)
-	if obj_game_controller.stairvarx>(obj_stair_up.sprite_width/8){
-		go_up=true
-	}
-} else if _directionu==0{
-obj_game_controller.stairvarx=(obj_player.x-obj_stair_up.x)
-	if obj_game_controller.stairvarx<(obj_stair_up.sprite_width/8){
-		go_up=true
-	}
-} else if _directionu==270{
-	obj_game_controller.stairvar=(obj_player.y-obj_stair_up.y)
-	if obj_game_controller.stairvar<(obj_stair_up.sprite_width/8){
-		go_up=true
-	}
-} else if _directionu==90 {
-	obj_game_controller.stairvar=(obj_player.y-obj_stair_up.y)
-	if obj_game_controller.stairvar>(obj_stair_up.sprite_width/8){
-		go_up=true
-	}
+// Determine stair movement based on direction
+switch (_direction_up) {
+    case 180:
+    case 0:
+        obj_game_controller.stair_x_offset = x - obj_stair_up.x;
+        go_up = scr_check_stair_condition(
+            obj_game_controller.stair_x_offset, 
+            obj_stair_up.sprite_width / 8, 
+            _direction_up == 180
+        );
+        break;
+
+    case 90:
+    case 270:
+        obj_game_controller.stair_y_offset = y - obj_stair_up.y;
+        go_up = scr_check_stair_condition(
+            obj_game_controller.stair_y_offset, 
+            obj_stair_up.sprite_width / 8, 
+            _direction_up == 90
+        );
+        break;
 }
 
-if go_up{
-obj_game_controller.stairvar=(obj_player.y-obj_stair_up.y)
-obj_game_controller.stairvarx=(obj_player.x-obj_stair_up.x)
-	obj_game_controller.player_direction=obj_player.direction
-	obj_game_controller.Entry_type=string("stairsU")
-	 if room==(rm_front_MD){
-		room_goto(rm_front_upper1)
-	}else if room=(rm_front_F2){
-		room_goto(rm_front_MD)
-	}else if room=(rm_front_F3){
-		room_goto(rm_front_F2)
-	}
+// Handle room transition if moving up the stairs
+if (go_up) {
+    obj_game_controller.stair_y_offset = y - obj_stair_up.y;
+    obj_game_controller.stair_x_offset = x - obj_stair_up.x;
+
+    obj_game_controller.player_direction = direction;
+    obj_game_controller.interaction_type = INTERACTION.STAIRSUP;
+
+    room_goto(scr_use_stair(room, STAIRDIRECTION.UP));
 }

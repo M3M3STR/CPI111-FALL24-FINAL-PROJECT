@@ -1,10 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
-if obj_game_controller.mute{
+if (obj_game_controller.is_muted) {
 	audio_pause_all()
-}else{
+} else {
 	audio_resume_all()
 }
-//camera_set_view_size(view_camera[0], 640, 480)
 
 

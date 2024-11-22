@@ -1,0 +1,6 @@
+enum RSCREEN {
+	MAIN,
+	COOLANT,
+	HEATER,
+	RODS
+}

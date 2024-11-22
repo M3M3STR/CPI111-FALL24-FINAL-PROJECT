@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_project_shadow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_project_shadow",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Scripts/Shaders.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
