@@ -16,7 +16,6 @@ function scr_reactor_adjust_control_rods(_command, _input) {
             obj_reactor.temp_rod_level = _rod_level;
             scr_reset_display();
             scr_set_output("Adjusting Control Rods...");
-            show_debug_message("Rod Level: " + string(_rod_level));
             reactor_screen = RSCREEN.MAIN;
 			with (obj_reactor) {
 				alarm_set(0, scr_fps() * 3.9);

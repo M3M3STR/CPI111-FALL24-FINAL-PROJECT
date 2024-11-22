@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"damage",
-    "path":"folders/Sprites/Main Assets/damage.yy",
+    "name":"Damage",
+    "path":"folders/Sprites/Main Assets/Damage.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
