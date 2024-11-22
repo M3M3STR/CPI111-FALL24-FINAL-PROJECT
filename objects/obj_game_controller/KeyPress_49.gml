@@ -5,4 +5,5 @@ if (!obj_game_controller.is_ship_powered) {
 } else {
     obj_game_controller.is_ship_powered = false;
 }
+
 show_debug_message(string(obj_game_controller.is_ship_powered));

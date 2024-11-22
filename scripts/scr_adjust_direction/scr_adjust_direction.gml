@@ -1,7 +1,7 @@
 // Ensures angles are within the range [0, 360)
 function wrap_angle(_angle) {
-    if (_angle < 0) return _angle + 360;
-    if (_angle >= 360) return _angle - 360;
+    _angle = _angle mod 360;
+    if (_angle < 0) _angle += 360;
     return _angle;
 }
 
@@ -38,5 +38,6 @@ function scr_adjust_direction() {
             }
             direction = wrap_angle(direction);
         }
+		jet_direction = wrap_angle(direction + 180);
     }
 }

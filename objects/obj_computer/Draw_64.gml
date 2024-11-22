@@ -1,7 +1,5 @@
 if (room != rm_ui_main_menu) {
     if (is_computer_on) {
-        show_debug_message(string(DISPLAY.DEFAULT) + " | " + string(DISPLAY.REACTOR));
-        show_debug_message(string(display_type));
 
         // Set font and color for display
         draw_set_font(fnt_computer_smooth);

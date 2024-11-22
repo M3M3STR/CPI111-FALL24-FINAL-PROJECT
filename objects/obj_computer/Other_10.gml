@@ -6,6 +6,7 @@ if (!is_computer_on) {
             var _reactor_sentence = "This Terminal is Password Protected";
             scr_init_display(DISPLAY.REACTOR, _reactor_sentence);
         } else {
+			reactor_screen = RSCREEN.MAIN;
             scr_init_display(DISPLAY.REACTOR, "Loading...");
             alarm_set(2, scr_fps());
         }
