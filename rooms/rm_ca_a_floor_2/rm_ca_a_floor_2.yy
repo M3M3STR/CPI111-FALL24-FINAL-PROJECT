@@ -24,6 +24,7 @@
     {"name":"inst_77A19BAB","path":"rooms/rm_ca_a_floor_2/rm_ca_a_floor_2.yy",},
     {"name":"inst_2E791BA9","path":"rooms/rm_ca_a_floor_2/rm_ca_a_floor_2.yy",},
     {"name":"inst_185E016E","path":"rooms/rm_ca_a_floor_2/rm_ca_a_floor_2.yy",},
+    {"name":"inst_23FFA54B","path":"rooms/rm_ca_a_floor_2/rm_ca_a_floor_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -87,6 +88,10 @@
     {"$GMRInstanceLayer":"","%Name":"Add_items","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_35D4020D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35D4020D","objectId":{"name":"obj_ladder","path":"objects/obj_ladder/obj_ladder.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.538734,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":480.0,},
         {"$GMRInstance":"v1","%Name":"inst_2E791BA9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E791BA9","objectId":{"name":"obj_terminal","path":"objects/obj_terminal/obj_terminal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":832.0,},
+        {"$GMRInstance":"v1","%Name":"inst_23FFA54B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_23FFA54B","objectId":{"name":"obj_crew","path":"objects/obj_crew/obj_crew.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_crew","path":"objects/obj_crew/obj_crew.yy",},"propertyId":{"name":"crew_name","path":"objects/obj_crew/obj_crew.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Joe Mama",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_crew","path":"objects/obj_crew/obj_crew.yy",},"propertyId":{"name":"dialogue","path":"objects/obj_crew/obj_crew.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Zoooooo wee mama!",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1024.0,"y":288.0,},
       ],"layers":[],"name":"Add_items","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Walls","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Walls","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":30,"TileCompressedData":[
           1,40,-28,1,2,43,2,-21,0,-4,-2147483648,-3,0,-2,2,-21,0,-4,-2147483648,-3,0,-2,2,-21,0,-7,-2147483648,
