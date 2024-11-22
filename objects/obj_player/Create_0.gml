@@ -35,7 +35,7 @@ jet_direction = (direction + 180) % 360;
 health = 100; // Starting health
 oxygen = 200; // Starting oxygen
 oxygen_depletion_rate = 0.01; // Oxygen depletion per step
-health_depletion_rate = 0.05; // Health depletion per step when oxygen is zero
+health_depletion_rate = 0.05; // Health depletion per step while oxygen is zero
 
 // Play background music if not already playing
 if (!audio_is_playing(snd_music_ambience_1)) {
