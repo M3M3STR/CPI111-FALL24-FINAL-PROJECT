@@ -5,7 +5,7 @@ function scr_command_fullscreen() {
     } else {
         window_set_fullscreen(true);
     }
-    obj_light_handler.call_rerender = true;
+    o_light_handler.call_rerender = true;
     obj_game_controller.is_shader_enabled = false;
     alarm_set(3, scr_fps());
 }

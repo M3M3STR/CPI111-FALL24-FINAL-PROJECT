@@ -33,7 +33,7 @@ if (go_down) {
     obj_game_controller.stair_x_offset = x - obj_stair_down.x;
 
     obj_game_controller.player_direction = direction;
-    obj_game_controller.interaction_type = INTERACTION.STAIRSDOWN;
+    obj_game_controller.interaction_type = InteractionType.StairsDown;
 
-    room_goto(scr_use_stair(room, STAIRDIRECTION.DOWN));
+    room_goto(scr_use_stair(room, StairDirection.Down));
 }

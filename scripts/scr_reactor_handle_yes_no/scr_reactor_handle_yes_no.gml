@@ -1,28 +1,24 @@
 /// @description Handle Yes/No response for Reactor prompts
 function scr_reactor_handle_yes_no(_command, _component) {
-    if (_command == RCOMMAND.YES) {
+    if _command == ReactorCommand.Yes {
         scr_reset_display();
-        var _action;
         switch (_component) {
             case "coolant_pumps":
-                obj_reactor.temp_cooling = !obj_reactor.are_pumps_cooling;
-                _action = scr_conditional(!obj_reactor.are_pumps_cooling, "Activating", "Deactivating");
-                scr_set_output(_action + " Coolant Pumps...");
+                obj_reactor.are_pumps_cooling = !obj_reactor.are_pumps_cooling;
+                var action = scr_conditional(obj_reactor.are_pumps_cooling, "Activating", "Deactivating");
+                scr_set_output(action + " Coolant Pumps...");
                 break;
             case "heat_exchangers":
-                obj_reactor.temp_heating = !obj_reactor.is_heat_exchanging;
-                _action = scr_conditional(!obj_reactor.is_heat_exchanging, "Activating", "Deactivating");
-                scr_set_output(_action + " Heat Exchangers...");
+                obj_reactor.is_heat_exchanging = !obj_reactor.is_heat_exchanging;
+                var action = scr_conditional(obj_reactor.is_heat_exchanging, "Activating", "Deactivating");
+                scr_set_output(action + " Heat Exchangers...");
                 break;
         }
-		with (obj_reactor) {
-            alarm_set(0, scr_fps() * 3.9);
-        }
-        alarm_set(2, 4 * scr_fps());
-        reactor_screen = RSCREEN.MAIN;
-    } else if (_command == RCOMMAND.NO) {
+        alarm_set(2, 5 * scr_fps());
+        reactor_screen = ReactorScreen.Main;
+    } else if _command == ReactorCommand.No {
         scr_reset_display();
-        reactor_screen = RSCREEN.MAIN;
+        reactor_screen = ReactorScreen.Main;
         alarm_set(2, scr_fps());
     } else {
         scr_command_unrecognized();

@@ -7,5 +7,5 @@ is_flashlight_on = true;
 is_shader_enabled = true;
 stair_x_offset = 0;
 stair_y_offset = 0;
-is_muted = false;
-is_ship_powered = false;
+is_muted = true;
+global.textbox_active = false;

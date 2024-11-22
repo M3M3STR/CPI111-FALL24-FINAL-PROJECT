@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Stairs",
-    "path":"folders/Sprites/Main Assets/Movement/Stairs.yy",
+    "name":"stair",
+    "path":"folders/Sprites/objects/stair.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

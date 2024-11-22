@@ -6,8 +6,8 @@
   "name":"obj_ladder",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ladder",
-    "path":"folders/Objects/Navigation/Ladder.yy",
+    "name":"Navigation",
+    "path":"folders/Objects/Lighting/Navigation.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_ladder_placeholder",
+    "path":"sprites/spr_ladder_placeholder/spr_ladder_placeholder.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

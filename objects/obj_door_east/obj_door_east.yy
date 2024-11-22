@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Navigation",
-    "path":"folders/Objects/Navigation.yy",
+    "path":"folders/Objects/Lighting/Navigation.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_door_side",
-    "path":"sprites/spr_door_side/spr_door_side.yy",
+    "name":"spr_Mdoor",
+    "path":"sprites/spr_Mdoor/spr_Mdoor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

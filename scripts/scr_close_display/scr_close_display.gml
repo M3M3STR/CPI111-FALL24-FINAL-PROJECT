@@ -9,12 +9,12 @@ function scr_close_display() {
     obj_crt_black.visible = false;
 
     switch (display_type) {
-        case DISPLAY.PAUSE:
-            obj_light_handler.call_rerender = true;
+        case DisplayType.Pause:
+            o_light_handler.call_rerender = true;
             break;
-        case DISPLAY.REACTOR:
+        case DisplayType.Reactor:
             break;
-        case DISPLAY.TESTING:
+        case DisplayType.Testing:
             break;
         default:
             break;

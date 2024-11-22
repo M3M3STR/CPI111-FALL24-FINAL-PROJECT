@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Stairs",
-    "path":"folders/Objects/Navigation/Stairs.yy",
+    "path":"folders/Objects/Lighting/Navigation/Stairs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

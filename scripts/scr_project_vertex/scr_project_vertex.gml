@@ -1,56 +1,50 @@
-function scr_project_vertex(
-    _vertex_buffer,
-    _point_a_x,
-    _point_a_y,
-    _point_b_x,
-    _point_b_y,
-    _light_x,
-    _light_y,
-    _color
-) {
-    // Shadows are infinite - almost, just enough to go off-screen
-    var _shadow_length = 1000;
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_project_vertex(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7) {
 
-    var _projected_a_x,
-        _projected_a_y,
-        _projected_b_x,
-        _projected_b_y,
-        _length_scaler;
+	var _vb = argument0;
+	var _Ax = argument1;
+	var _Ay = argument2;
+	var _Bx = argument3;
+	var _By = argument4;
+	var _Lx = argument5;
+	var _Ly = argument6;
+	var _Color = argument7;
 
-    // Calculate unit vector length to point A
-    _projected_a_x = _point_a_x - _light_x;
-    _projected_a_y = _point_a_y - _light_y;
-    _length_scaler =
-        (1.0 * _shadow_length) /
-        sqrt(_projected_a_x * _projected_a_x + _projected_a_y * _projected_a_y); // Unit length scaler * shadow length
-    _projected_a_x = _point_a_x + _projected_a_x * _length_scaler;
-    _projected_a_y = _point_a_y + _projected_a_y * _length_scaler;
+	// shadows are infinite - almost, just enough to go off screen
+	var SHADOW_LENGTH = 1000;
 
-    // Calculate unit vector length to point B
-    _projected_b_x = _point_b_x - _light_x;
-    _projected_b_y = _point_b_y - _light_y;
-    _length_scaler =
-        (1.0 * _shadow_length) /
-        sqrt(_projected_b_x * _projected_b_x + _projected_b_y * _projected_b_y); // Unit length scaler * shadow length
-    _projected_b_x = _point_b_x + _projected_b_x * _length_scaler;
-    _projected_b_y = _point_b_y + _projected_b_y * _length_scaler;
+	var Adx,Ady,Bdx,Bdy,len;
 
-    // Build the quad
-    vertex_position(_vertex_buffer, _point_a_x, _point_a_y);
-    vertex_color(_vertex_buffer, _color, 1);
+	// get unit length to point 1
+	Adx = _Ax-_Lx;      
+	Ady = _Ay-_Ly;      
+	len = (1.0*SHADOW_LENGTH)/sqrt( (Adx*Adx)+(Ady*Ady) );      // unit length scaler * Shadow length
+	Adx = _Ax + Adx * len;
+	Ady = _Ay + Ady * len;
 
-    vertex_position(_vertex_buffer, _point_b_x, _point_b_y);
-    vertex_color(_vertex_buffer, _color, 1);
+	// get unit length to point 2
+	Bdx = _Bx-_Lx;      
+	Bdy = _By-_Ly;      
+	len = (1.0*SHADOW_LENGTH) / sqrt( (Bdx*Bdx)+(Bdy*Bdy) );    // unit length scaler * Shadow length
+	Bdx = _Bx + Bdx * len;
+	Bdy = _By + Bdy * len;
 
-    vertex_position(_vertex_buffer, _projected_a_x, _projected_a_y);
-    vertex_color(_vertex_buffer, _color, 1);
 
-    vertex_position(_vertex_buffer, _point_b_x, _point_b_y);
-    vertex_color(_vertex_buffer, _color, 1);
+	// now build a quad
+	vertex_position(_vb, _Ax,_Ay);
+	vertex_color(_vb, _Color, 1);
+	vertex_position(_vb, _Bx,_By);
+	vertex_color(_vb, _Color, 1);
+	vertex_position(_vb, Adx,Ady);
+	vertex_color(_vb, _Color, 1);
 
-    vertex_position(_vertex_buffer, _projected_a_x, _projected_a_y);
-    vertex_color(_vertex_buffer, _color, 1);
+	vertex_position(_vb, _Bx,_By);
+	vertex_color(_vb, _Color, 1);
+	vertex_position(_vb, Adx,Ady);
+	vertex_color(_vb, _Color, 1);
+	vertex_position(_vb, Bdx,Bdy);
+	vertex_color(_vb, _Color, 1);
 
-    vertex_position(_vertex_buffer, _projected_b_x, _projected_b_y);
-    vertex_color(_vertex_buffer, _color, 1);
+
 }

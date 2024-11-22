@@ -1,11 +1,3 @@
-function scr_check_stair_condition(
-    _axis_value,
-    _sprite_width_divisor,
-    _direction_check
-) {
-    return scr_conditional(
-        _direction_check,
-        _axis_value > _sprite_width_divisor,
-        _axis_value < _sprite_width_divisor
-    );
+function scr_check_stair_condition(axis_value, sprite_width_divisor, direction_check) {
+    return scr_conditional(direction_check, axis_value > sprite_width_divisor, axis_value < sprite_width_divisor);
 }

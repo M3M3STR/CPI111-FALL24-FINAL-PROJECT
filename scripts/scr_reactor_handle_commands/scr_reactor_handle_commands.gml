@@ -6,34 +6,34 @@ function scr_reactor_handle_commands(_command, _input) {
     }
     
     switch (reactor_screen) {
-        case RSCREEN.MAIN:
+        case ReactorScreen.Main:
             switch (_command) {
-                case RCOMMAND.ACTIVATE:
+                case ReactorCommand.Activate:
                     scr_reactor_activate();
                     break;
-                case RCOMMAND.DEACTIVATE:
+                case ReactorCommand.Deactivate:
                     scr_reactor_deactivate();
                     break;
-                case RCOMMAND.COOLANTPUMPS:
-                    reactor_screen = RSCREEN.COOLANT;
+                case ReactorCommand.CoolantPumps:
+                    reactor_screen = ReactorScreen.Coolant;
                     scr_reactor_coolant_pumps_prompt();
                     break;
-                case RCOMMAND.HEATEXCHANGERS:
-                    reactor_screen = RSCREEN.HEATER;
+                case ReactorCommand.HeatExchangers:
+                    reactor_screen = ReactorScreen.Heater;
                     scr_reactor_heat_exchangers_prompt();
                     break;
-                case RCOMMAND.CONTROLRODS:
-                    reactor_screen = RSCREEN.RODS;
+                case ReactorCommand.ControlRods:
+                    reactor_screen = ReactorScreen.Rods;
 					if obj_reactor.is_reactor_working {
                         scr_reactor_control_rods_prompt();
                     } else {
-                        scr_set_output("Error: .");
+                        scr_set_output("Error: Reactor is not active.");
                     }
                     break;
-                case RCOMMAND.BACK:
+                case ReactorCommand.Back:
 					scr_close_display();
                     break;
-                case RCOMMAND.UNRECOGNIZED:
+                case ReactorCommand.Unrecognized:
                     scr_command_unrecognized();
                     break;
                 default:
@@ -42,20 +42,20 @@ function scr_reactor_handle_commands(_command, _input) {
             }
             break;
 
-        case RSCREEN.COOLANT:
+        case ReactorScreen.Coolant:
             scr_reactor_handle_yes_no(_command, "coolant_pumps");
             break;
 
-        case RSCREEN.HEATER:
+        case ReactorScreen.Heater:
             scr_reactor_handle_yes_no(_command, "heat_exchangers");
             break;
 
-        case RSCREEN.RODS:
+        case ReactorScreen.Rods:
 		    scr_reactor_adjust_control_rods(_command, _input);
 		    break;
 
         default:
-            reactor_screen = RSCREEN.MAIN;
+            reactor_screen = ReactorScreen.Main;
             scr_reset_display();
             break;
     }

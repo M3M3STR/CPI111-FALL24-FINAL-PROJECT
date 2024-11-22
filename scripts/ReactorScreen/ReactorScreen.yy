@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ReactorScreen",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ReactorScreen",
+  "parent":{
+    "name":"Enums",
+    "path":"folders/Scripts/Enums.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

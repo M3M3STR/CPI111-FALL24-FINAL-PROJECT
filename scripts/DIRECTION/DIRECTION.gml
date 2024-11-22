@@ -1,10 +1,10 @@
 // Enum for movement direction
-enum DIRECTION {
-    WEST,
-    EAST
+enum Direction {
+    West,
+    East
 }
 
-enum STAIRDIRECTION {
-	UP,
-	DOWN,
+enum StairDirection {
+	Up,
+	Down,
 }

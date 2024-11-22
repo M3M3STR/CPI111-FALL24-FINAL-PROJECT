@@ -1,43 +1,43 @@
 /// @description Parse input string and return command identifier
 function scr_parse_input(_input_string, _commands_synonyms, _display_type) {
-    var _input = _input_string;
-    var _command;
+    var input = _input_string;
+    var command;
 
     switch (_display_type) {
-        case DISPLAY.PAUSE:
-            _command = PCOMMAND.NONE;
+        case DisplayType.Pause:
+            command = PauseCommand.None;
             break;
-        case DISPLAY.REACTOR:
-            _command = RCOMMAND.NONE;
+        case DisplayType.Reactor:
+            command = ReactorCommand.None;
             break;
         default:
-            _command = PCOMMAND.NONE;
+            command = PauseCommand.None;
             break;
     }
 
-    var _cmd_list_length = array_length(_commands_synonyms);
-    for (var _i = 0; _i < _cmd_list_length; _i++) {
-        var _cmd_entry = _commands_synonyms[_i];
-        var _cmd_id = _cmd_entry[0];
-        var _synonyms = _cmd_entry[1];
-        var _syn_length = array_length(_synonyms);
-        for (var _j = 0; _j < _syn_length; _j++) {
-            if (_input == _synonyms[_j]) {
-                return _cmd_id;
+    var cmd_list_length = array_length(_commands_synonyms);
+    for (var i = 0; i < cmd_list_length; i++) {
+        var cmd_entry = _commands_synonyms[i];
+        var cmd_id = cmd_entry[0];
+        var synonyms = cmd_entry[1];
+        var syn_length = array_length(synonyms);
+        for (var j = 0; j < syn_length; j++) {
+            if (input == synonyms[j]) {
+                return cmd_id;
             }
         }
     }
 
-    if (_input == "") {
-        return _command;
+    if (input == "") {
+        return command;
     } else {
         switch (_display_type) {
-            case DISPLAY.PAUSE:
-                return PCOMMAND.UNRECOGNIZED;
-            case DISPLAY.REACTOR:
-                return RCOMMAND.UNRECOGNIZED;
+            case DisplayType.Pause:
+                return PauseCommand.Unrecognized;
+            case DisplayType.Reactor:
+                return ReactorCommand.Unrecognized;
             default:
-                return PCOMMAND.UNRECOGNIZED;
+                return PauseCommand.Unrecognized;
         }
     }
 }
