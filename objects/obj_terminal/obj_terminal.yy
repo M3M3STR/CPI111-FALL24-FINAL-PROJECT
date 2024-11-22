@@ -12,7 +12,10 @@
     "name":"Elements",
     "path":"folders/Objects/Elements.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_furnature_parent",
+    "path":"objects/obj_furnature_parent/obj_furnature_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
