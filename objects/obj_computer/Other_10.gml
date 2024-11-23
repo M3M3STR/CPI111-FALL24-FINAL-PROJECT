@@ -2,7 +2,7 @@
 
 if (!is_computer_on) {
     if (room == rm_engine_main_deck) {
-        if (!obj_terminal.is_reactor_unlocked) {
+        if (!is_reactor_unlocked) {
             var _reactor_sentence = "This Terminal is Password Protected";
             scr_init_display(DISPLAY.REACTOR, _reactor_sentence);
         } else {

@@ -97,7 +97,7 @@ if (is_computer_on && !is_processing) {
         _command = scr_parse_input(_input, _commands_synonyms, DISPLAY.REACTOR);
 
         // Handle the reactor terminal states
-        if (!obj_terminal.is_reactor_unlocked) {
+        if (!is_reactor_unlocked) {
             scr_reactor_handle_locked_terminal(_command, _input);
         } else {
             scr_reactor_handle_commands(_command, _input);

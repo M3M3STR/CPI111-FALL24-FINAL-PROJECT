@@ -31,4 +31,5 @@ text_x = 0;
 text_y = 0;
 
 // Reactor-specific state
+is_reactor_unlocked = false;
 reactor_screen = RSCREEN.MAIN;
