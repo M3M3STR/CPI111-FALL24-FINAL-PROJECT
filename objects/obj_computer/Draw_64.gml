@@ -27,7 +27,7 @@ if (room != rm_ui_main_menu) {
                     "  kwH";
 
                 _temp_text = scr_conditional(
-                    obj_terminal.is_reactor_unlocked && reactor_screen == RSCREEN.MAIN && !is_loading_text,
+                    is_reactor_unlocked && reactor_screen == RSCREEN.MAIN && !is_loading_text,
                     _temp_text,
                     ""
                 );

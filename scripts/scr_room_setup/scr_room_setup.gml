@@ -5,7 +5,7 @@ function scr_room_setup(_interaction) {
 
     switch (_interaction) {
         case INTERACTION.LADDER:
-            _target_x = obj_ladder.x;
+            _target_x = obj_ladder.x + 15;
             _target_y = obj_ladder.y;
             break;
 

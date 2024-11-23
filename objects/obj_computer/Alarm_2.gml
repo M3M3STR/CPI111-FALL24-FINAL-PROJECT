@@ -4,14 +4,14 @@ function reactor_status() {
     return scr_conditional(obj_reactor.is_reactor_working, "Activated", "Deactivated");
 }
 
-if (instance_exists(obj_terminal) && !obj_terminal.is_reactor_unlocked) {
+if (instance_exists(obj_terminal) && !is_reactor_unlocked) {
     scr_reset_display();
-    obj_terminal.is_reactor_unlocked = true;
+    is_reactor_unlocked = true;
 
     scr_set_sentence("Reactor Status: " + reactor_status());
 }
 
-if (instance_exists(obj_terminal) && obj_terminal.is_reactor_unlocked) {
+if (instance_exists(obj_terminal) && is_reactor_unlocked) {
     scr_reset_display();
     scr_set_sentence("Reactor Status: " + reactor_status());
     if (instance_exists(obj_reactor)) {
