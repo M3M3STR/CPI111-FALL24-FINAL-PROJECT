@@ -19,6 +19,9 @@ function scr_adjust_direction() {
     } else if (keyboard_check(ord("S"))) {
         _target_direction = 270;
     }
+	// Determine Target based on mouse input (comment out if you dont like think it makes the jumping mechanic work better)
+	_target_direction = point_direction(x,y,mouse_x,mouse_y);
+
 
     // Proceed only if a key is pressed
     if (_target_direction != -1) {

@@ -7,6 +7,8 @@ ly_ = y;
 var _xinput = 0;
 var _yinput = 0;
 
+
+
 if (!obj_computer.is_computer_on && !is_player_paused) {
     _xinput = keyboard_check(ord("D")) - keyboard_check(ord("A"));
     _yinput = keyboard_check(ord("S")) - keyboard_check(ord("W"));
@@ -36,10 +38,10 @@ if (!obj_computer.is_computer_on && !is_player_paused) {
             x_speed *= _speed_scale;
             y_speed *= _speed_scale;
         }
-
         // Move and collide
-        scr_move_player(x_speed, y_speed);
-        move_bounce_solid(false);
+      scr_move_player(x_speed, y_speed);
+ move_bounce_solid(false);
+  
 
         // Set if the player is moving
         // is_moving = (abs(x_speed) > 0.1) || (abs(y_speed) > 0.1);
@@ -75,6 +77,7 @@ if (!obj_computer.is_computer_on && !is_player_paused) {
                 audio_stop_sound(snd_sfx_jet);
             }
         }
+
     } else {
         // Normal Walking Movement
         move_and_collide(_xinput * player_speed_walk, _yinput * player_speed_walk, tilemap);

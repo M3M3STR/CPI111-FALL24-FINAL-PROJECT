@@ -8,6 +8,7 @@ go_up = false;
 go_down = false;
 is_on_stair = true;
 is_player_paused = false;
+is_on_wall = false;
 
 lx_ = x + sprite_width / 2;
 ly_ = y + sprite_height / 2;
