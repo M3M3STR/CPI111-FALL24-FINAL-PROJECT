@@ -10,9 +10,10 @@ var _yinput = 0;
 
 
 if (!obj_computer.is_computer_on && !is_player_paused) {
+	if oxygen>0{
     _xinput = keyboard_check(ord("D")) - keyboard_check(ord("A"));
     _yinput = keyboard_check(ord("S")) - keyboard_check(ord("W"));
-
+	}
     if (!scr_back_of_ship()) {
         // Antigravity Movement
 
@@ -35,8 +36,8 @@ if (!obj_computer.is_computer_on && !is_player_paused) {
         var _current_speed = sqrt(x_speed * x_speed + y_speed * y_speed);
         if (_current_speed > player_max_speed) {
             var _speed_scale = player_max_speed / _current_speed;
-            x_speed *= _speed_scale;
-            y_speed *= _speed_scale;
+            x_speed *= _speed_scale/2;
+            y_speed *= _speed_scale/2;
         }
         // Move and collide
       scr_move_player(x_speed, y_speed);
@@ -51,8 +52,9 @@ if (!obj_computer.is_computer_on && !is_player_paused) {
         var _jet_x = x + lengthdir_x(0, direction);
         var _jet_y = y + lengthdir_y(0, direction);
 
-        // Emit particles
+        // Emit particles and manage oxygen
         if (is_move_key_pressed) {
+				oxygen=oxygen-0.25
             part_type_direction(jet_particle_type, jet_direction - 15, jet_direction + 15, 0, 0);
             part_emitter_region(
                 jet_system,
@@ -73,6 +75,7 @@ if (!obj_computer.is_computer_on && !is_player_paused) {
             }
         } else {
             part_emitter_clear(jet_system, jet_emitter);
+		
             if (audio_is_playing(snd_sfx_jet)) {
                 audio_stop_sound(snd_sfx_jet);
             }

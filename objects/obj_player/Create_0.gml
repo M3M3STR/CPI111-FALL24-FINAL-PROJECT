@@ -17,7 +17,7 @@ rad_default_ = 1280; // edit for light bounding box (LAG!!!!)
 light_color = c_white;
 light_strength = 1;
 
-tilemap = layer_tilemap_get_id("Walls");
+
 default_speed = 5;
 player_speed_walk = default_speed;
 player_speed = 0;

@@ -1,4 +1,4 @@
-if (keyboard_check_pressed(vk_enter) && !is_player_paused) {
+if (keyboard_check_pressed(ord("E")) && !is_player_paused) {
     
     audio_play_sound(snd_sfx_player_use_ladder, 3, false);
     
