@@ -119,3 +119,7 @@ if (obj_game_controller.is_muted) {
 } else {
     audio_resume_all();
 }
+if god_mode{
+	health=100
+	oxygen=100
+}
