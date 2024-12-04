@@ -3,9 +3,13 @@
 rad_ = rad_default_ * scale_;
 lx_ = x;
 ly_ = y;
+if obj_game_controller.light_cheat{
+	light_strength=1
+}else{
 light_strength=(((obj_reactor.temperature/100)-3)/3)
 if light_strength>1{
 light_strength=1
 }else if light_strength<0{
 light_strength=0
+}
 }

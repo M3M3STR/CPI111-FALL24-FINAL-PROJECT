@@ -9,3 +9,4 @@ stair_x_offset = 0;
 stair_y_offset = 0;
 is_muted = false;
 is_ship_powered = false;
+light_cheat = false;
