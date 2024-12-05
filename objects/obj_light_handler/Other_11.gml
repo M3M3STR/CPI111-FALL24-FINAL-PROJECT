@@ -28,6 +28,7 @@ for (var _i = 0; _i < light_count_; _i++) {
 
         if (_mask == spr_light_mask_window) {
             scr_project_shadow(_lx, _ly, _rad, tilemap_window_);
+			
         } else {
 		
             scr_project_shadow(_lx, _ly, _rad, tilemap_);

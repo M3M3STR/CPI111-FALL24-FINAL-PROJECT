@@ -102,6 +102,7 @@
     {"name":"inst_7BA8C9D4","path":"rooms/rm_engine_main_deck/rm_engine_main_deck.yy",},
     {"name":"inst_6FB0A735","path":"rooms/rm_engine_main_deck/rm_engine_main_deck.yy",},
     {"name":"inst_56E52302","path":"rooms/rm_engine_main_deck/rm_engine_main_deck.yy",},
+    {"name":"inst_6DE370D1","path":"rooms/rm_engine_main_deck/rm_engine_main_deck.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -458,6 +459,7 @@
         {"$GMRInstance":"v1","%Name":"inst_7A231084","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7A231084","objectId":{"name":"obj_locker","path":"objects/obj_locker/obj_locker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":1298.0,"y":896.0,},
         {"$GMRInstance":"v1","%Name":"inst_9D8DEBE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_9D8DEBE","objectId":{"name":"obj_large_computer","path":"objects/obj_large_computer/obj_large_computer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":1298.0,"y":754.0,},
         {"$GMRInstance":"v1","%Name":"inst_7BA8C9D4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7BA8C9D4","objectId":{"name":"obj_locker","path":"objects/obj_locker/obj_locker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":1298.0,"y":1248.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6DE370D1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6DE370D1","objectId":{"name":"obj_chair_cool","path":"objects/obj_chair_cool/obj_chair_cool.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":42.77017,"scaleX":1.0,"scaleY":1.0,"x":1504.0,"y":864.0,},
       ],"layers":[
         {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
             {"$GMRSpriteGraphic":"","%Name":"graphic_6E92FDBC","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_6E92FDBC","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.75,"scaleY":1.75,"spriteId":{"name":"spr_floor_stain_1","path":"sprites/spr_floor_stain_1/spr_floor_stain_1.yy",},"x":1504.0,"y":1056.0,},
