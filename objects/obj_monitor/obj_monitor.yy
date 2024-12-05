@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_chair_normal",
-    "path":"sprites/spr_chair_normal/spr_chair_normal.yy",
+    "name":"spr_monitor",
+    "path":"sprites/spr_monitor/spr_monitor.yy",
   },
   "spriteMaskId":null,
   "visible":true,
