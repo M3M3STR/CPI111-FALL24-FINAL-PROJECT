@@ -31,8 +31,8 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"foreground_depth_","filters":[],"listItems":[],"multiselect":false,"name":"foreground_depth_","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"foreground_ambient_light_","filters":[],"listItems":[],"multiselect":false,"name":"foreground_ambient_light_","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.5","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"ambient_light_","filters":[],"listItems":[],"multiselect":false,"name":"ambient_light_","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.45","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"foreground_ambient_light_","filters":[],"listItems":[],"multiselect":false,"name":"foreground_ambient_light_","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":".5","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"ambient_light_","filters":[],"listItems":[],"multiselect":false,"name":"ambient_light_","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.3","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"call_rerender","filters":[],"listItems":[],"multiselect":false,"name":"call_rerender","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"call_rerender_reactor","filters":[],"listItems":[],"multiselect":false,"name":"call_rerender_reactor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],

@@ -48,6 +48,9 @@ for (var _i = 0; _i < light_count_; _i++) {
             scr_project_shadow(_lx, _ly, _rad, tilemap_window_);
         } else {
             scr_project_shadow(_lx, _ly, _rad, tilemap_);
+			if (layer_exists("sub_tile")) {
+			  scr_project_shadow(_lx, _ly, _rad, tilemap_sub_);
+			}
         }
         surface_reset_target();
 

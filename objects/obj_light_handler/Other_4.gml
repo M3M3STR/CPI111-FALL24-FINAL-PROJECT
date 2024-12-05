@@ -12,12 +12,16 @@ static_lightmap_surf_ = -1;
 u_ambient_light_ = shader_get_uniform(sh_ambient_light, "u_fAmbientLight");
 
 //Add tilemap here to cast shadows
-if (layer_exists("Light_blockers")) {
-    tilemap_[0] = layer_tilemap_get_id("Light_blockers");
-}
 if (layer_exists("window_light_blockers")) {
     tilemap_window_[0] = layer_tilemap_get_id("window_light_blockers");
 }
+if (layer_exists("sub_tile")) {
+    tilemap_sub_[0] = layer_tilemap_get_id("sub_tile");
+}
+if (layer_exists("Light_blockers")) {
+    tilemap_[0] = layer_tilemap_get_id("Light_blockers");
+}
+
 
 if (foreground_depth_ != -1) {
     var _lf = instance_create_depth(x, y, foreground_depth_, obj_light_drawer);

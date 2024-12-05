@@ -17,6 +17,9 @@ tilemap_[0] = layer_tilemap_get_id("Light_blockers");
 if (layer_exists("window_light_blockers")) {
     tilemap_window_[0] = layer_tilemap_get_id("window_light_blockers");
 }
+if (layer_exists("sub_tile")) {
+    tilemap_sub_[0] = layer_tilemap_get_id("sub_tile");
+}
 if (layer_exists("Light_blockers")) {
     tilemap_[0] = layer_tilemap_get_id("Light_blockers");
 }
