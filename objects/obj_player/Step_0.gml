@@ -9,7 +9,7 @@ var _yinput = 0;
 
 
 
-if (!obj_computer.is_computer_on && !is_player_paused) {
+if (!obj_computer.is_computer_on && !is_player_paused && !instance_exists(obj_textbox)) {
 	if oxygen>0{
     _xinput = keyboard_check(ord("D")) - keyboard_check(ord("A"));
     _yinput = keyboard_check(ord("S")) - keyboard_check(ord("W"));
@@ -54,7 +54,7 @@ if (!obj_computer.is_computer_on && !is_player_paused) {
 
         // Emit particles and manage oxygen
         if (is_move_key_pressed) {
-				oxygen=oxygen-0.25
+				oxygen=oxygen-0.125
             part_type_direction(jet_particle_type, jet_direction - 15, jet_direction + 15, 0, 0);
             part_emitter_region(
                 jet_system,
