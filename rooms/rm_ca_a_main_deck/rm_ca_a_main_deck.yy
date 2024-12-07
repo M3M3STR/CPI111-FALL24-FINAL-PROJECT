@@ -27,6 +27,8 @@
     {"name":"inst_7A14B9D2","path":"rooms/rm_ca_a_main_deck/rm_ca_a_main_deck.yy",},
     {"name":"inst_7B8BAD18","path":"rooms/rm_ca_a_main_deck/rm_ca_a_main_deck.yy",},
     {"name":"inst_1ACC2AE3","path":"rooms/rm_ca_a_main_deck/rm_ca_a_main_deck.yy",},
+    {"name":"inst_2E2024C","path":"rooms/rm_ca_a_main_deck/rm_ca_a_main_deck.yy",},
+    {"name":"inst_14F45A3B","path":"rooms/rm_ca_a_main_deck/rm_ca_a_main_deck.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -153,6 +155,8 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_crew","path":"objects/obj_crew/obj_crew.yy",},"propertyId":{"name":"dialogue","path":"objects/obj_crew/obj_crew.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Hey Captain! According to this map of the ship that Houston sent with us, this is the Main Deck of Cargo Area A. To the East of here is Cargo Area B. Past that you will find the Engine and Reactor room. I believe that is where the power flows through. Maybe you'll be able to turn the lights on there.",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_crew","path":"objects/obj_crew/obj_crew.yy",},"propertyId":{"name":"crew_name","path":"objects/obj_crew/obj_crew.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Cadet Aldrin",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":576.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2E2024C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E2024C","objectId":{"name":"obj_o2","path":"objects/obj_o2/obj_o2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":180.0,"scaleX":1.0,"scaleY":1.0,"x":1632.0,"y":1152.0,},
+        {"$GMRInstance":"v1","%Name":"inst_14F45A3B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_14F45A3B","objectId":{"name":"obj_o2","path":"objects/obj_o2/obj_o2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":64.0,},
       ],"layers":[
         {"$GMRAssetLayer":"","%Name":"asset","assets":[
             {"$GMRSpriteGraphic":"","%Name":"graphic_60F24FB9","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_60F24FB9","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_damage_03","path":"sprites/spr_damage_03/spr_damage_03.yy",},"x":1280.0,"y":448.0,},

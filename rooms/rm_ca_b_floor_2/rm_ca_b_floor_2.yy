@@ -9,6 +9,8 @@
     {"name":"inst_62A0DD17_1_1_2","path":"rooms/rm_ca_b_floor_2/rm_ca_b_floor_2.yy",},
     {"name":"inst_5AB27BD9_1_1_2","path":"rooms/rm_ca_b_floor_2/rm_ca_b_floor_2.yy",},
     {"name":"inst_3B4750B2","path":"rooms/rm_ca_b_floor_2/rm_ca_b_floor_2.yy",},
+    {"name":"inst_24F67D7E","path":"rooms/rm_ca_b_floor_2/rm_ca_b_floor_2.yy",},
+    {"name":"inst_16D5AC9B","path":"rooms/rm_ca_b_floor_2/rm_ca_b_floor_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -51,6 +53,8 @@
       ],"layers":[],"name":"Lights","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Add_items","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_3B4750B2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B4750B2","objectId":{"name":"obj_ladder_up","path":"objects/obj_ladder_up/obj_ladder_up.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":201.0,"y":480.0,},
+        {"$GMRInstance":"v1","%Name":"inst_24F67D7E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_24F67D7E","objectId":{"name":"obj_o2","path":"objects/obj_o2/obj_o2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1344.0,"y":64.0,},
+        {"$GMRInstance":"v1","%Name":"inst_16D5AC9B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_16D5AC9B","objectId":{"name":"obj_o2","path":"objects/obj_o2/obj_o2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":180.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":896.0,},
       ],"layers":[
         {"$GMRInstanceLayer":"","%Name":"Jet_Stream","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Jet_Stream","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
       ],"name":"Add_items","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

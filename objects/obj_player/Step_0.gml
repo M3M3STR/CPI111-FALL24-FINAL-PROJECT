@@ -54,7 +54,7 @@ if (!obj_computer.is_computer_on && !is_player_paused && !instance_exists(obj_te
 
         // Emit particles and manage oxygen
         if (is_move_key_pressed) {
-				oxygen=oxygen-0.125
+				oxygen=oxygen-0.25
             part_type_direction(jet_particle_type, jet_direction - 15, jet_direction + 15, 0, 0);
             part_emitter_region(
                 jet_system,

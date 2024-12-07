@@ -16,6 +16,7 @@
     {"name":"inst_336B0D71","path":"rooms/rm_hp_hallway/rm_hp_hallway.yy",},
     {"name":"inst_21309842","path":"rooms/rm_hp_hallway/rm_hp_hallway.yy",},
     {"name":"inst_484A0498","path":"rooms/rm_hp_hallway/rm_hp_hallway.yy",},
+    {"name":"inst_1CCC74A5","path":"rooms/rm_hp_hallway/rm_hp_hallway.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -46,6 +47,7 @@
     {"$GMRInstanceLayer":"","%Name":"Add_items","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_1A68FB4E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1A68FB4E","objectId":{"name":"obj_door_east","path":"objects/obj_door_east/obj_door_east.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1214.0,"y":480.0,},
         {"$GMRInstance":"v1","%Name":"inst_89DCA18","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_89DCA18","objectId":{"name":"obj_door_west","path":"objects/obj_door_west/obj_door_west.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":180.0,"scaleX":1.0,"scaleY":1.0,"x":66.0,"y":480.0,},
+        {"$GMRInstance":"v1","%Name":"inst_1CCC74A5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1CCC74A5","objectId":{"name":"obj_o2","path":"objects/obj_o2/obj_o2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":384.0,},
       ],"layers":[
         {"$GMRInstanceLayer":"","%Name":"Jet_Stream","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Jet_Stream","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
       ],"name":"Add_items","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
