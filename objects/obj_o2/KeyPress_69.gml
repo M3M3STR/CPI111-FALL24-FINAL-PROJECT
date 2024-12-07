@@ -1,6 +1,6 @@
 if (instance_exists(obj_o2)) {
     if (!obj_player.is_player_paused) {
-        if (distance_to_object(obj_player) < 100) {
+        if (distance_to_object(obj_player) < obj_player.interaction_distance) {
 			if(!instance_exists(obj_textbox)) {
 			instance_create_layer(0, 0, "idk_important", obj_textbox);
 			}

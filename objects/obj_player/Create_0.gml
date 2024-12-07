@@ -10,6 +10,7 @@ is_on_stair = true;
 is_player_paused = false;
 is_on_wall = false;
 god_mode = false;
+interaction_distance = 20;
 
 lx_ = x + sprite_width / 2;
 ly_ = y + sprite_height / 2;
