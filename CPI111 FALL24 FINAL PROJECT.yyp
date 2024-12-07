@@ -267,6 +267,7 @@
     {"id":{"name":"spr_damage_02","path":"sprites/spr_damage_02/spr_damage_02.yy",},},
     {"id":{"name":"spr_damage_03","path":"sprites/spr_damage_03/spr_damage_03.yy",},},
     {"id":{"name":"spr_desk","path":"sprites/spr_desk/spr_desk.yy",},},
+    {"id":{"name":"spr_dialouge_box","path":"sprites/spr_dialouge_box/spr_dialouge_box.yy",},},
     {"id":{"name":"spr_door_closed","path":"sprites/spr_door_closed/spr_door_closed.yy",},},
     {"id":{"name":"spr_door_front","path":"sprites/spr_door_front/spr_door_front.yy",},},
     {"id":{"name":"spr_door_open","path":"sprites/spr_door_open/spr_door_open.yy",},},

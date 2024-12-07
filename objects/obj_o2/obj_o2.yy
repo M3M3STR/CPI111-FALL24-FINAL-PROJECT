@@ -28,7 +28,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"spr_oxygen_canisters",
     "path":"sprites/spr_oxygen_canisters/spr_oxygen_canisters.yy",
