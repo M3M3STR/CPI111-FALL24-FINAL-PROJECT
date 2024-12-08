@@ -15,7 +15,8 @@ if (is_computer_on && !is_processing) {
             [PCOMMAND.FULLSCREEN, ["fullscreen", "full-screen", "full screen", "full"]],
             [PCOMMAND.QUIT, ["quit"]],
             [PCOMMAND.BACK, ["back", "b", "return", "exit", "fuck off"]],
-            [PCOMMAND.MUTE, ["mute"]]
+            [PCOMMAND.MUTE, ["mute"]],
+			[PCOMMAND.SAVE, ["save"]]
         ];
 
         _command = scr_parse_input(_input, _commands_synonyms, DISPLAY.PAUSE);
@@ -45,6 +46,9 @@ if (is_computer_on && !is_processing) {
             case PCOMMAND.NONE:
                 scr_command_none();
                 break;
+			case PCOMMAND.SAVE:
+				scr_save_game();
+				break;
             case PCOMMAND.UNRECOGNIZED:
                 scr_command_unrecognized();
                 break;
