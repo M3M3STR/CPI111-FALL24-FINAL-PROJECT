@@ -1,4 +1,5 @@
 function scr_room_setup(_interaction) {
+	
     var _target_x = obj_player.x;
     var _target_y = obj_player.y;
     var _update_camera = true; // Default to updating the camera
@@ -38,7 +39,10 @@ function scr_room_setup(_interaction) {
             _target_x = obj_game_controller.player_x;
             _target_y = obj_game_controller.player_y;
             break;
-
+		case INTERACTION.LOAD:
+			_target_x = obj_game_controller.player_x_saved;
+            _target_y = obj_game_controller.player_y_saved;
+			break;
         default:
             _update_camera = false; // No camera update for unknown interactions
             break;

@@ -1,5 +1,8 @@
 interaction_type = -1;
 last_room = room;
+room_to_load = -1;
+player_x_saved = 0;
+player_y_saved = 0;
 player_x = 0;
 player_y = 0;
 player_direction = 0;
