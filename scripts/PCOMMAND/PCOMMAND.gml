@@ -8,6 +8,5 @@ enum PCOMMAND {
     QUIT,
     BACK,
     MUTE,
-    UNRECOGNIZED,
-	SAVE
+    UNRECOGNIZED
 }
