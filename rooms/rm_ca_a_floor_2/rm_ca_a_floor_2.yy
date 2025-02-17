@@ -34,6 +34,7 @@
     {"name":"inst_23EC106E","path":"rooms/rm_ca_a_floor_2/rm_ca_a_floor_2.yy",},
     {"name":"inst_2E636BC8","path":"rooms/rm_ca_a_floor_2/rm_ca_a_floor_2.yy",},
     {"name":"inst_20588CC","path":"rooms/rm_ca_a_floor_2/rm_ca_a_floor_2.yy",},
+    {"name":"inst_6E31268B","path":"rooms/rm_ca_a_floor_2/rm_ca_a_floor_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -136,6 +137,7 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1376.0,"y":192.0,},
         {"$GMRInstance":"v1","%Name":"inst_23EC106E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_23EC106E","objectId":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":1120.0,},
         {"$GMRInstance":"v1","%Name":"inst_2E636BC8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E636BC8","objectId":{"name":"obj_o2","path":"objects/obj_o2/obj_o2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":896.0,"y":64.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6E31268B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E31268B","objectId":{"name":"obj_desk","path":"objects/obj_desk/obj_desk.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1056.0,"y":800.0,},
       ],"layers":[
         {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
             {"$GMRSpriteGraphic":"","%Name":"graphic_4D222309","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_4D222309","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":-89.44962,"scaleX":2.0,"scaleY":4.75,"spriteId":{"name":"spr_floor_wall_stain_1","path":"sprites/spr_floor_wall_stain_1/spr_floor_wall_stain_1.yy",},"x":1248.0,"y":768.0,},

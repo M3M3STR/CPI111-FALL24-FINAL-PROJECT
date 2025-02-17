@@ -28,10 +28,10 @@ function scr_init_search(){
     //obj_computer.image_xscale = _xscle / 10;
     //obj_computer.image_yscale = _yscle / 10;
 
-    x = cx + _xscle * 12.8;
-    y = cy + _yscle * 9.6;
-    obj_Desk_search.x = x - _xscle * 12.8;
-    obj_Desk_search.y = y - _yscle * 9.6;
+    var A = cx + _xscle * 12.8;
+    var B = cy + _yscle * 9.6;
+    obj_Desk_search.x = A - _xscle * 12.8;
+    obj_Desk_search.y = B - _yscle * 9.6;
  //   obj_crt_black.x = x;
    // obj_crt_black.y = y;
 
