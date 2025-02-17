@@ -4,6 +4,7 @@ function scr_close_search(){
     obj_player.is_player_paused = false;
     obj_game_controller.search_mode = 0;
     obj_Desk_search.visible = false;
+	 obj_Desk_Bottom.visible = false;
 	obj_player.visible = true;
     //bj_crt_black.visible = false;
 }

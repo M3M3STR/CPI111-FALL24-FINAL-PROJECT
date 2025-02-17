@@ -7,6 +7,7 @@ function scr_init_search(){
 	obj_player.visible = false;
     obj_player.is_player_paused = true;
     obj_Desk_search.visible = true;
+	obj_Desk_Bottom.visible = true;
     //obj_crt_black.visible = true;
 
     // Configure camera and scaling
@@ -23,6 +24,8 @@ function scr_init_search(){
     // Adjust object scaling and positioning
     obj_Desk_search.image_xscale = _xscle;
     obj_Desk_search.image_yscale = _yscle;
+	 obj_Desk_Bottom.image_xscale = _xscle;
+    obj_Desk_Bottom.image_yscale = _yscle;
     //obj_crt_black.image_xscale = _xscle / 10;
     //obj_crt_black.image_yscale = _yscle / 10;
     //obj_computer.image_xscale = _xscle / 10;
@@ -32,6 +35,8 @@ function scr_init_search(){
     var B = cy + _yscle * 9.6;
     obj_Desk_search.x = A - _xscle * 12.8;
     obj_Desk_search.y = B - _yscle * 9.6;
+	obj_Desk_Bottom.x = A - _xscle * 12.8;
+    obj_Desk_Bottom.y = B - _yscle * 9.6;
  //   obj_crt_black.x = x;
    // obj_crt_black.y = y;
 
