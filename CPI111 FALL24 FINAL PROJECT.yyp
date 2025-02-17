@@ -352,6 +352,7 @@
     {"id":{"name":"spr_watch","path":"sprites/spr_watch/spr_watch.yy",},},
     {"id":{"name":"spr_window_1tile","path":"sprites/spr_window_1tile/spr_window_1tile.yy",},},
     {"id":{"name":"spr_window_2tile","path":"sprites/spr_window_2tile/spr_window_2tile.yy",},},
+    {"id":{"name":"Sprite114","path":"sprites/Sprite114/Sprite114.yy",},},
     {"id":{"name":"ts_collision_small","path":"tilesets/ts_collision_small/ts_collision_small.yy",},},
     {"id":{"name":"ts_collision","path":"tilesets/ts_collision/ts_collision.yy",},},
     {"id":{"name":"ts_floor_blue","path":"tilesets/ts_floor_blue/ts_floor_blue.yy",},},
