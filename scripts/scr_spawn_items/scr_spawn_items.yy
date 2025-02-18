@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_spawn_items",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_spawn_items",
+  "parent":{
+    "name":"Search",
+    "path":"folders/Scripts/Search.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

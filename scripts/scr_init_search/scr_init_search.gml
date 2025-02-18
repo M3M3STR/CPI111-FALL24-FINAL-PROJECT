@@ -39,5 +39,13 @@ function scr_init_search(){
     obj_Desk_Bottom.y = B - _yscle * 9.6;
  //   obj_crt_black.x = x;
    // obj_crt_black.y = y;
-
+   
+   
+   //vars for summoning desk items
+	var X1 = obj_Desk_search.x
+	var Y1 = obj_Desk_search.y
+	var X2 = obj_Desk_search.sprite_width-X1
+	var Y2 = obj_Desk_search.sprite_height-Y1
+	
+	scr_spawn_items(X1,Y1,X2,Y2,obj_keycard_blue)
 }

@@ -251,6 +251,7 @@
     {"id":{"name":"scr_save_game","path":"scripts/scr_save_game/scr_save_game.yy",},},
     {"id":{"name":"scr_set_output","path":"scripts/scr_set_output/scr_set_output.yy",},},
     {"id":{"name":"scr_set_sentence","path":"scripts/scr_set_sentence/scr_set_sentence.yy",},},
+    {"id":{"name":"scr_spawn_items","path":"scripts/scr_spawn_items/scr_spawn_items.yy",},},
     {"id":{"name":"scr_update_player_sprite","path":"scripts/scr_update_player_sprite/scr_update_player_sprite.yy",},},
     {"id":{"name":"scr_use_door","path":"scripts/scr_use_door/scr_use_door.yy",},},
     {"id":{"name":"scr_use_ladder","path":"scripts/scr_use_ladder/scr_use_ladder.yy",},},
