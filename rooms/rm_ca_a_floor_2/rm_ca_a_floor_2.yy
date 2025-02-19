@@ -36,6 +36,7 @@
     {"name":"inst_20588CC","path":"rooms/rm_ca_a_floor_2/rm_ca_a_floor_2.yy",},
     {"name":"inst_6E31268B","path":"rooms/rm_ca_a_floor_2/rm_ca_a_floor_2.yy",},
     {"name":"inst_645251F4","path":"rooms/rm_ca_a_floor_2/rm_ca_a_floor_2.yy",},
+    {"name":"inst_1E5A7E","path":"rooms/rm_ca_a_floor_2/rm_ca_a_floor_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -57,7 +58,9 @@
         {"$GMRInstanceLayer":"","%Name":"Search_layer","depth":-300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
             {"$GMRInstance":"v1","%Name":"inst_20588CC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_20588CC","objectId":{"name":"obj_Desk_search","path":"objects/obj_Desk_search/obj_Desk_search.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":896.0,"y":288.0,},
           ],"layers":[
-            {"$GMRInstanceLayer":"","%Name":"SearchItemLayer","depth":-200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"SearchItemLayer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+            {"$GMRInstanceLayer":"","%Name":"SearchItemLayer","depth":-200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+                {"$GMRInstance":"v1","%Name":"inst_1E5A7E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E5A7E","objectId":{"name":"obj_vingette","path":"objects/obj_vingette/obj_vingette.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.0,"scaleY":0.0,"x":-3232.0,"y":4160.0,},
+              ],"layers":[],"name":"SearchItemLayer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
             {"$GMRInstanceLayer":"","%Name":"Back_of_search","depth":-100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
                 {"$GMRInstance":"v1","%Name":"inst_645251F4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_645251F4","objectId":{"name":"obj_Desk_Bottom","path":"objects/obj_Desk_Bottom/obj_Desk_Bottom.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":896.0,"y":288.0,},
               ],"layers":[],"name":"Back_of_search","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

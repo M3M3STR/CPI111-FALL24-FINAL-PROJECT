@@ -2,7 +2,11 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_init_search(){
     // Reset display-related variables
-
+	var num
+	//tempvar for declaring how many items to spawn in said desk
+	var junk = 10
+	//number of junk items
+	var junkammount = 40
     // Set display properties
 	obj_player.visible = false;
     obj_player.is_player_paused = true;
@@ -19,7 +23,6 @@ function scr_init_search(){
     cvh = camera_get_view_height(_camera);
     cvw = camera_get_view_width(_camera);
 
- 
 
     // Adjust object scaling and positioning
     obj_Desk_search.image_xscale = _xscle;
@@ -40,12 +43,46 @@ function scr_init_search(){
  //   obj_crt_black.x = x;
    // obj_crt_black.y = y;
    
+   //ADJUSTMENT FOR BOX FIXXXXX!!!!!!!!!!!
+   var boxadjust = 120
+   
    
    //vars for summoning desk items
-	var X1 = obj_Desk_search.x
-	var Y1 = obj_Desk_search.y
-	var X2 = obj_Desk_search.sprite_width-X1
-	var Y2 = obj_Desk_search.sprite_height-Y1
+	var X1 = obj_Desk_search.x+boxadjust/2
+	var Y1 = obj_Desk_search.y+boxadjust
+	var X2 = obj_Desk_search.sprite_width-X1-boxadjust
+	var Y2 = obj_Desk_search.sprite_height+Y1-(boxadjust*4)
 	
-	scr_spawn_items(X1,Y1,X2,Y2,obj_keycard_blue)
+	var item
+	for (var i = 0; i < junk; i++) {
+		num = irandom_range(1,50)
+		if num == 1 {
+			item=obj_junk_calculator
+		}else if num == 2{
+			item=obj_junk_clips
+		}else if num < 5{
+			item=obj_junk_paper1
+		}else if num < 15{
+			item=obj_junk_paper2
+		}else if num < 25{
+			item=obj_junk_paper3
+		}else if num < 35{
+			item=obj_junk_paperclip
+		}else if num < 40{
+			item=obj_junk_pen1
+		}else if num < 45{
+			item=obj_junk_pen2
+		}else if num < 47{
+			item=obj_junk_pencil
+		}else if num < 49{
+			item=obj_junk_scissors
+		}else if num == 49{
+			item=obj_junk_stapler
+		}else if num == 50{
+			item=obj_junk_tape
+		}
+
+    scr_spawn_items(X1, Y1, X2, Y2, item);
+}
+scr_spawn_items(X1, Y1, X2, Y2, obj_keycard_blue);
 }
