@@ -198,6 +198,7 @@
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"rm_ui_main_menu","path":"rooms/rm_ui_main_menu/rm_ui_main_menu.yy",},},
     {"id":{"name":"rm_ui_pause_menu","path":"rooms/rm_ui_pause_menu/rm_ui_pause_menu.yy",},},
+    {"id":{"name":"Room16","path":"rooms/Room16/Room16.yy",},},
     {"id":{"name":"DIRECTION","path":"scripts/DIRECTION/DIRECTION.yy",},},
     {"id":{"name":"DISPLAY","path":"scripts/DISPLAY/DISPLAY.yy",},},
     {"id":{"name":"INTERACTION","path":"scripts/INTERACTION/INTERACTION.yy",},},
@@ -424,6 +425,7 @@
     {"roomId":{"name":"rm_front_floor_3","path":"rooms/rm_front_floor_3/rm_front_floor_3.yy",},},
     {"roomId":{"name":"rm_front_main_deck","path":"rooms/rm_front_main_deck/rm_front_main_deck.yy",},},
     {"roomId":{"name":"rm_front_upper_deck","path":"rooms/rm_front_upper_deck/rm_front_upper_deck.yy",},},
+    {"roomId":{"name":"Room16","path":"rooms/Room16/Room16.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
