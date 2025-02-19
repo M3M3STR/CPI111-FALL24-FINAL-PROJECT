@@ -6,7 +6,7 @@ function scr_close_search(){
     obj_Desk_search.visible = false;
 	 obj_Desk_Bottom.visible = false;
 	obj_player.visible = true;
-	layer_destroy_instances(layer_get_id("SearchItemLayer"))
+
 	
 	
 for (var i = instance_number(Obj_search_object_parent) - 1; i >= 0; i--) {
