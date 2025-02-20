@@ -32,8 +32,8 @@ function scr_init_search(){
 	
 	
 	
-    cvh = obj_Desk_search.sprite_width
-    cvw = obj_Desk_search.sprite_height
+    cvw = camera_get_view_width(_camera)
+    cvh = camera_get_view_height(_camera)
 
 	layer_depth(layer_get_id("SearchItemLayer"),((layer_get_depth(layer_get_id("Back_of_search")))-100))
 
@@ -58,12 +58,12 @@ function scr_init_search(){
    
    //ADJUSTMENT FOR BOX FIXXXXX!!!!!!!!!!!
 
-   var boxadjustx = (cvw/10)
-   var boxadjusty = (cvh/10)
+   var boxadjustx = (cvw/5)
+   var boxadjusty = (cvh/5)
    
    
    //vars for summoning desk items
-	var X1 = cx+boxadjustx
+	var X1 = cx+boxadjustx/2
 	var Y1 = cy+boxadjusty
 	var X2 = cx+cvw-boxadjustx
 	var Y2 = cy+cvh-boxadjusty*2

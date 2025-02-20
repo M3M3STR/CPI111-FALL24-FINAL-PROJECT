@@ -5,21 +5,32 @@ if (pressed) {
     var new_x = mouse_x - self.ofx; // Adjusting based on initial offset
     var new_y = mouse_y - self.ofy;
 
-    // Store the last valid position
+    var x_movable = true;
+    var y_movable = true;
 
-    // Predict the next position
-    x = new_x; 
-    y = new_y;
-    // Check for collisions with the box at the new position
-    if (self.collide) {
-
-        // If there is a collision, revert to the last known valid position
-		self.collide=false
-    } else {
-        // If no collision, update the last valid position
-    x = new_x; 
-    y = new_y;
-	last_valid_x = x;
-    last_valid_y = y;
+    // Check for collisions independently for X and Y
+    if (place_meeting(new_x, y, obj_Desk_search)) {
+        x_movable = false; // X movement blocked
     }
+    if (place_meeting(x, new_y, obj_Desk_search)) {
+        y_movable = false; // Y movement blocked
+    }
+
+    // Apply movement only if that axis is free
+    if (x_movable) {
+        x = new_x;
+    }
+    if (y_movable) {
+        y = new_y;
+    }
+	if !x_movable && !y_movable{
+	x=last_valid_x
+    y=last_valid_y
+	}else{
+		    // Update last valid position
+    last_valid_x = x;
+    last_valid_y = y;
+	}
+
+
 }

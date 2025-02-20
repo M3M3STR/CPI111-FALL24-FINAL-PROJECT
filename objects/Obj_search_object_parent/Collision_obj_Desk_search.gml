@@ -2,7 +2,7 @@
 // You can write your code in this editor
 self.collide=true
 
-if birthed {
+if birthed{
 scr_respawn_item()
 }else{
 

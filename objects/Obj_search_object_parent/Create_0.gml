@@ -10,10 +10,20 @@ self.image_xscale=_xscle/1.2
 self.image_yscale=_yscle/1.2
 last_valid_x = x;
 last_valid_y = y;
-obj_search_object_parent.boxadjust = obj_search_object_parent.boxadjust
-alarm_set(0,20)
+
+alarm_set(0,2)
 if self.object_index= obj_junk_paper1 || self.object_index= obj_junk_paper2 || self.object_index= obj_junk_paper3{
 image_angle=irandom_range(-15,15)
 }else{
 image_angle=irandom_range(0,360)
 }
+   //vars for summoning desk items
+	var cx = camera_get_view_x(_camera);
+    var cy = camera_get_view_y(_camera);	
+	var cvw = camera_get_view_width(_camera)
+    var cvh = camera_get_view_height(_camera)
+
+	
+	if ((self.x <= cx) || (self.y <= cy)||(self.x >= (cx+cvw)) || (self.y >= (cy+cvh))){
+		scr_respawn_item()
+	}
