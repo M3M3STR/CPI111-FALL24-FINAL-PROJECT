@@ -10,8 +10,8 @@
     "path":"folders/Objects/Search/Junk.yy",
   },
   "parentObjectId":{
-    "name":"Obj_search_object_parent",
-    "path":"objects/Obj_search_object_parent/Obj_search_object_parent.yy",
+    "name":"obj_search_object_parent",
+    "path":"objects/obj_search_object_parent/obj_search_object_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

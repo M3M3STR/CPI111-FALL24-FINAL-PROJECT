@@ -9,8 +9,8 @@ function scr_close_search(){
 
 	
 	
-for (var i = instance_number(Obj_search_object_parent) - 1; i >= 0; i--) {
-    instance_destroy(instance_find(Obj_search_object_parent, i));
+for (var i = instance_number(obj_search_object_parent) - 1; i >= 0; i--) {
+    instance_destroy(instance_find(obj_search_object_parent, i));
 }
     //bj_crt_black.visible = false;
 }

@@ -16,44 +16,60 @@ function scr_init_search(){
 
     // Configure camera and scaling
     var _camera = view_camera[0];
+	var view = view_current
+
     cx = camera_get_view_x(_camera);
     cy = camera_get_view_y(_camera);
     _xscle = camera_get_view_width(_camera) / 128;
     _yscle = camera_get_view_height(_camera) / 96;
-    cvh = camera_get_view_height(_camera);
-    cvw = camera_get_view_width(_camera);
+	
+	
+	
+	obj_Desk_search.image_xscale = _xscle;
+    obj_Desk_search.image_yscale = _yscle;
+	obj_Desk_Bottom.image_xscale = _xscle;
+    obj_Desk_Bottom.image_yscale = _yscle;
+	
+	
+	
+    cvh = obj_Desk_search.sprite_width
+    cvw = obj_Desk_search.sprite_height
 
+	layer_depth(layer_get_id("SearchItemLayer"),((layer_get_depth(layer_get_id("Back_of_search")))-100))
 
     // Adjust object scaling and positioning
     obj_Desk_search.image_xscale = _xscle;
     obj_Desk_search.image_yscale = _yscle;
 	 obj_Desk_Bottom.image_xscale = _xscle;
     obj_Desk_Bottom.image_yscale = _yscle;
+
     //obj_crt_black.image_xscale = _xscle / 10;
     //obj_crt_black.image_yscale = _yscle / 10;
     //obj_computer.image_xscale = _xscle / 10;
     //obj_computer.image_yscale = _yscle / 10;
 
-    var A = cx + _xscle * 12.8;
-    var B = cy + _yscle * 9.6;
-    obj_Desk_search.x = A - _xscle * 12.8;
-    obj_Desk_search.y = B - _yscle * 9.6;
-	obj_Desk_Bottom.x = A - _xscle * 12.8;
-    obj_Desk_Bottom.y = B - _yscle * 9.6;
+
+    obj_Desk_search.x = cx;
+    obj_Desk_search.y = cy;
+	obj_Desk_Bottom.x = obj_Desk_search.x;
+    obj_Desk_Bottom.y = obj_Desk_search.y;
  //   obj_crt_black.x = x;
    // obj_crt_black.y = y;
    
    //ADJUSTMENT FOR BOX FIXXXXX!!!!!!!!!!!
-   var boxadjust = 120
+
+   var boxadjustx = (cvw/10)
+   var boxadjusty = (cvh/10)
    
    
    //vars for summoning desk items
-	var X1 = obj_Desk_search.x+boxadjust/2
-	var Y1 = obj_Desk_search.y+boxadjust
-	var X2 = obj_Desk_search.sprite_width-X1-boxadjust
-	var Y2 = obj_Desk_search.sprite_height+Y1-(boxadjust*4)
+	var X1 = cx+boxadjustx
+	var Y1 = cy+boxadjusty
+	var X2 = cx+cvw-boxadjustx
+	var Y2 = cy+cvh-boxadjusty*2
 	
 	var item
+	
 	for (var i = 0; i < junk; i++) {
 		num = irandom_range(1,50)
 		if num == 1 {
@@ -81,7 +97,6 @@ function scr_init_search(){
 		}else if num == 50{
 			item=obj_junk_tape
 		}
-
     scr_spawn_items(X1, Y1, X2, Y2, item);
 }
 scr_spawn_items(X1, Y1, X2, Y2, obj_keycard_blue);

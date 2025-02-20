@@ -1,9 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
-self.image_xscale=7.5
-self.image_yscale=7.5
+    var _camera = view_camera[0];
+
+   var _xscle = camera_get_view_width(_camera) / 128;
+   var _yscle = camera_get_view_height(_camera) / 96;
+
+
+self.image_xscale=_xscle/1.2
+self.image_yscale=_yscle/1.2
 last_valid_x = x;
 last_valid_y = y;
+obj_search_object_parent.boxadjust = obj_search_object_parent.boxadjust
 alarm_set(0,20)
 if self.object_index= obj_junk_paper1 || self.object_index= obj_junk_paper2 || self.object_index= obj_junk_paper3{
 image_angle=irandom_range(-15,15)

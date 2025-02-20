@@ -5,7 +5,7 @@ self.ofx = (mouse_x-x);
 self.ofy = (mouse_y-y);
 pressed=true;
 
-var parent_object = Obj_search_object_parent; // Replace with your actual parent object
+var parent_object = obj_search_object_parent; // Replace with your actual parent object
 var inst;
 var top_depth = 1000000; // Start with a very high depth
 

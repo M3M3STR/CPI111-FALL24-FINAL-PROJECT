@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_search_object_parent",
+  "%Name":"obj_search_object_parent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -11,7 +11,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_search_object_parent",
+  "name":"obj_search_object_parent",
   "overriddenProperties":[],
   "parent":{
     "name":"Search",
@@ -39,6 +39,7 @@
     {"$GMObjectProperty":"v1","%Name":"last_valid_x","filters":[],"listItems":[],"multiselect":false,"name":"last_valid_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"last_valid_y","filters":[],"listItems":[],"multiselect":false,"name":"last_valid_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"birthed","filters":[],"listItems":[],"multiselect":false,"name":"birthed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"boxadjust","filters":[],"listItems":[],"multiselect":false,"name":"boxadjust","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"120","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
