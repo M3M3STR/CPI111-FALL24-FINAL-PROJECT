@@ -23,7 +23,7 @@ image_angle=irandom_range(0,360)
 	var cvw = camera_get_view_width(_camera)
     var cvh = camera_get_view_height(_camera)
 
-	
+	if obj_Desk_search.open==true
 	if ((self.x <= cx) || (self.y <= cy)||(self.x >= (cx+cvw)) || (self.y >= (cy+cvh))){
 		scr_respawn_item()
 	}

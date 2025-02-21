@@ -97,7 +97,11 @@ function scr_init_search(){
 		}else if num == 50{
 			item=obj_junk_tape
 		}
+		if obj_Desk_search.open=true{
     scr_spawn_items(X1, Y1, X2, Y2, item);
+		}
 }
+if obj_Desk_search.open=true{
 scr_spawn_items(X1, Y1, X2, Y2, obj_keycard_blue);
+}
 }

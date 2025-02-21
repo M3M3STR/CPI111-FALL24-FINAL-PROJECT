@@ -4,7 +4,7 @@ if (instance_exists(obj_desk)) {
 			audio_stop_sound(snd_sfx_jet);
             obj_player.x_speed = 0;
 			obj_player.y_speed = 0;
-			
+			obj_Desk_search.open=true
 			scr_init_search()
 		alarm_set(0,20)
 

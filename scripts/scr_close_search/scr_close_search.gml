@@ -6,6 +6,7 @@ function scr_close_search(){
     obj_Desk_search.visible = false;
 	 obj_Desk_Bottom.visible = false;
 	obj_player.visible = true;
+	obj_Desk_search.open=false
 
 	
 	

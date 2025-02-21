@@ -8,14 +8,15 @@ function scr_respawn_item(){
     var cvh = camera_get_view_height(_camera)
     var cvw = camera_get_view_width(_camera)
 
-    var boxadjustx = (cvw/5)
-    var boxadjusty = (cvh/5)
+    var boxadjustx = (cvw/2)
+    var boxadjusty = (cvh/2)
    
 	var X1 = cx+boxadjustx/2
 	var Y1 = cy+boxadjusty
 	var X2 = cx+cvw-boxadjustx
 	var Y2 = cy+cvh-boxadjusty*2
-	
+	if 	obj_Desk_search.open=true{
 scr_spawn_items(X1, Y1, X2, Y2, self.object_index);
 instance_destroy(self)
+	}
 }
