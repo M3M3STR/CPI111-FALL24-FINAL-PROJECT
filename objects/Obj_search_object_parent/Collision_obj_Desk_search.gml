@@ -3,6 +3,7 @@
 self.collide=true
 
 if birthed{
+	self._respawn=0
 scr_respawn_item()
 }else{
 

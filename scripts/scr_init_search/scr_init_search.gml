@@ -63,10 +63,13 @@ function scr_init_search(){
    
    
    //vars for summoning desk items
-	var X1 = cx+boxadjustx/2
-	var Y1 = cy+boxadjusty
-	var X2 = cx+cvw-boxadjustx
-	var Y2 = cy+cvh-boxadjusty*2
+	var X1 = cx+boxadjustx/3
+	var Y1 = cy+boxadjusty/2
+	var X2 = cx+cvw-boxadjustx/3
+	var Y2 = cy+cvh-boxadjusty/2
+	
+	instance_create_layer(X1,Y1, layer_get_id("Watch"), debugpoint);
+	instance_create_layer(X2-64,Y2-64, layer_get_id("Watch"), debugpoint);
 	
 	var item
 	
@@ -98,10 +101,10 @@ function scr_init_search(){
 			item=obj_junk_tape
 		}
 		if obj_Desk_search.open=true{
-    scr_spawn_items(X1, Y1, X2, Y2, item);
+    scr_spawn_items(X1, Y1, X2, Y2, item,0);
 		}
 }
 if obj_Desk_search.open=true{
-scr_spawn_items(X1, Y1, X2, Y2, obj_keycard_blue);
+scr_spawn_items(X1, Y1, X2, Y2, obj_keycard_blue,0);
 }
 }

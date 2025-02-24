@@ -26,6 +26,7 @@
     {"$GMFolder":"","%Name":"Stairs","folderPath":"folders/Objects/Navigation/Stairs.yy","name":"Stairs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Others","folderPath":"folders/Objects/Others.yy","name":"Others","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Search","folderPath":"folders/Objects/Search.yy","name":"Search","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"DEBUG","folderPath":"folders/Objects/DEBUG.yy","name":"DEBUG","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Junk","folderPath":"folders/Objects/Search/Junk.yy","name":"Junk","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -82,6 +83,7 @@
   "resources":[
     {"id":{"name":"fnt_computer_pixel","path":"fonts/fnt_computer_pixel/fnt_computer_pixel.yy",},},
     {"id":{"name":"fnt_computer_smooth","path":"fonts/fnt_computer_smooth/fnt_computer_smooth.yy",},},
+    {"id":{"name":"debugpoint","path":"objects/debugpoint/debugpoint.yy",},},
     {"id":{"name":"obj_b_back","path":"objects/obj_b_back/obj_b_back.yy",},},
     {"id":{"name":"obj_b_fullscreen","path":"objects/obj_b_fullscreen/obj_b_fullscreen.yy",},},
     {"id":{"name":"obj_b_main","path":"objects/obj_b_main/obj_b_main.yy",},},
@@ -397,6 +399,7 @@
     {"id":{"name":"spr_watch","path":"sprites/spr_watch/spr_watch.yy",},},
     {"id":{"name":"spr_window_1tile","path":"sprites/spr_window_1tile/spr_window_1tile.yy",},},
     {"id":{"name":"spr_window_2tile","path":"sprites/spr_window_2tile/spr_window_2tile.yy",},},
+    {"id":{"name":"Sprite129","path":"sprites/Sprite129/Sprite129.yy",},},
     {"id":{"name":"ts_collision_small","path":"tilesets/ts_collision_small/ts_collision_small.yy",},},
     {"id":{"name":"ts_collision","path":"tilesets/ts_collision/ts_collision.yy",},},
     {"id":{"name":"ts_floor_blue","path":"tilesets/ts_floor_blue/ts_floor_blue.yy",},},
