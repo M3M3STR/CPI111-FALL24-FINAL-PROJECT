@@ -68,6 +68,8 @@ function scr_init_search(){
 	var X2 = cx+cvw-boxadjustx/3
 	var Y2 = cy+cvh-boxadjusty/2
 	
+	
+	//debug for show item spawn bounding box uncomment if needed
 	instance_create_layer(X1,Y1, layer_get_id("Watch"), debugpoint);
 	instance_create_layer(X2-64,Y2-64, layer_get_id("Watch"), debugpoint);
 	
@@ -101,10 +103,10 @@ function scr_init_search(){
 			item=obj_junk_tape
 		}
 		if obj_Desk_search.open=true{
-    scr_spawn_items(X1, Y1, X2, Y2, item,0);
+    scr_spawn_items(X1, Y1, X2, Y2, item);
 		}
 }
 if obj_Desk_search.open=true{
-scr_spawn_items(X1, Y1, X2, Y2, obj_keycard_blue,0);
+scr_spawn_items(X1, Y1, X2, Y2, obj_keycard_blue);
 }
 }

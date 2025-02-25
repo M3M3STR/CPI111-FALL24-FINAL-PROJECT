@@ -2,7 +2,7 @@
 // You can write your code in this editor
 var parent_object = obj_search_object_parent; // Replace with your actual parent object
 var inst;
-var top_depth = 1000000; // Start with a very high depth
+var top_depth = 0; // Start with a very high depth
 
 
 // Step 1: Iterate over all instances of the parent object's children
