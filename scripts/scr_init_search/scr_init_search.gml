@@ -70,8 +70,8 @@ function scr_init_search(){
 	
 	
 	//debug for show item spawn bounding box uncomment if needed
-	instance_create_layer(X1,Y1, layer_get_id("Watch"), debugpoint);
-	instance_create_layer(X2-64,Y2-64, layer_get_id("Watch"), debugpoint);
+	//instance_create_layer(X1,Y1, layer_get_id("Watch"), debugpoint);
+	//instance_create_layer(X2-64,Y2-64, layer_get_id("Watch"), debugpoint);
 	
 	var item
 	
